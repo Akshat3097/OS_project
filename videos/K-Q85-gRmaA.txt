@@ -1,0 +1,862 @@
+00:00 in this video we are going to discuss
+00:02 
+
+00:02 amount types of schedulers in operating
+00:05 
+
+00:05 system we know what is scheduling
+00:07 
+
+00:07 scheduling decides the order in which
+00:10 
+
+00:10 the processes are to be executed in a
+00:14 
+
+00:14 multi programming system we can have
+00:17 
+
+00:17 several processes in the main memory so
+00:20 
+
+00:20 when one process is waiting for some i/o
+00:23 
+
+00:23 operation then CPU is ID so CPU control
+00:27 
+
+00:27 will be shifted to some other process so
+00:29 
+
+00:29 in that way we can utilize the
+00:31 
+
+00:31 efficiency of the CPU in the effective
+00:33 
+
+00:33 manner with the help of the scheduling
+00:36 
+
+00:36 mainly there are three three types of
+00:38 
+
+00:38 scheduler sorry available the first one
+00:41 
+
+00:41 is long term scheduler which can also be
+00:43 
+
+00:43 party has top chip unit second bodies
+00:46 
+
+00:46 shorter efficient unit this can also be
+00:49 
+
+00:49 called as CPU should unit
+00:50 
+
+00:50 third one is medium dimension unit in
+00:53 
+
+00:53 this video we are going to discuss about
+00:56 
+
+00:56 these three schedules first let's see
+00:58 
+
+00:59 the first one long-term secular our job
+01:01 
+
+01:01 scheduler long-term scheduler loads
+01:04 
+
+01:04 process from secondary memory to the
+01:07 
+
+01:07 main memory why because we know that CPU
+01:11 
+
+01:11 can execute a process if it resides in
+01:14 
+
+01:14 main memory only so the long-term
+01:17 
+
+01:17 scheduler loads the corresponding
+01:18 
+
+01:19 processes from
+01:20 
+
+01:20 secondary memory to the main memory in
+01:23 
+
+01:23 secondary memory we have if you can't
+01:26 
+
+01:26 talk to you job queue contains list of
+01:29 
+
+01:29 processes in the system's job queue
+01:32 
+
+01:32 contains list of all the processes which
+01:35 
+
+01:35 are in the system
+01:36 
+
+01:36 let your system contains hundred
+01:37 
+
+01:38 processes then job view contains all the
+01:40 
+
+01:40 hundred processes so where job view
+01:42 
+
+01:42 resets
+01:43 
+
+01:43 job queue resides in secondary memory
+01:45 
+
+01:45 such as hard disk various in main memory
+01:49 
+
+01:49 we have a new partner DQ ridicu contains
+01:53 
+
+01:53 list of processes which are ready for
+01:56 
+
+01:56 execution by the CPU so ridiculous is in
+02:00 
+
+02:00 main memory very Aza
+02:03 
+
+02:03 job queue resides in secondary memory
+02:06 
+
+02:06 as artists so the task of lanthanum
+02:08 
+
+02:08 Chitina is he glows a process from
+02:11 
+
+02:11 secondary memory such as job you to main
+02:16 
+
+02:16 memory such as ridicu now let's see the
+02:19 
+
+02:19 second but chartarum scheduler chartarum
+02:22 
+
+02:22 scheduler Peaks the process from the
+02:25 
+
+02:25 ready queue and the allocate CPU do that
+02:28 
+
+02:28 process so CPU starts execution of that
+02:32 
+
+02:32 process we know that ready queue is
+02:35 
+
+02:35 present in the main memory ready queue
+02:38 
+
+02:38 contains a list of processes that are
+02:41 
+
+02:41 ready for execution so here - our
+02:44 
+
+02:44 curricula selects a process from the
+02:48 
+
+02:48 ready queue and the allocates CPU to
+02:51 
+
+02:51 that process so CPU starts executing
+02:54 
+
+02:54 that process what is the other name for
+02:56 
+
+02:56 shorter and shangela CPU scheduler the
+02:59 
+
+02:59 major difference between long term
+03:01 
+
+03:01 scheduler and short term scheduler is
+03:04 
+
+03:04 degree of frequency so degree of
+03:08 
+
+03:08 frequency is the major difference
+03:10 
+
+03:10 between long direction you learn and
+03:13 
+
+03:13 shorten janitor so what is degree of
+03:15 
+
+03:15 frequency degree of frequency means
+03:18 
+
+03:18 which scheduler we are using more
+03:22 
+
+03:22 frequently and which scheduler we are
+03:25 
+
+03:25 using less frequently so coming to to
+03:29 
+
+03:29 these schedulers we uses around theorem
+03:32 
+
+03:32 scheduler very very less frequently why
+03:35 
+
+03:35 because what is the task of long term
+03:37 
+
+03:37 scheduler long term scheduler loads a
+03:40 
+
+03:40 process from secondary memory to the
+03:43 
+
+03:43 main memory lambda M scheduler loads a
+03:47 
+
+03:47 process from job due to the ready queue
+03:50 
+
+03:50 once loading is over then the task of
+03:54 
+
+03:54 long term scheduler is over various
+03:56 
+
+03:56 coming to the shorter and shangela
+03:58 
+
+03:58 chartarum shield unit picks a process
+04:01 
+
+04:01 from the ready queue and the elected CPU
+04:04 
+
+04:04 to the process let us assume that here
+04:08 
+
+04:08 the short term scheduler
+04:10 
+
+04:10 picks in process from ready queue such
+04:13 
+
+04:13 as shorter
+04:15 
+
+04:15 yet process pina to the CPU here issues
+04:19 
+
+04:19 that we are using a round-robin
+04:21 
+
+04:21 algorithm in round-robin scheduling
+04:24 
+
+04:24 algorithm every process will be executed
+04:27 
+
+04:27 for particular time slice period let us
+04:31 
+
+04:31 assume that here that time slice period
+04:33 
+
+04:33 is 1 we you same way as we have to
+04:37 
+
+04:37 execute the process for 15 milliseconds
+04:40 
+
+04:40 in order to complete its execution so
+04:44 
+
+04:44 what is the barrister type of this
+04:45 
+
+04:45 process 15 milliseconds various what is
+04:49 
+
+04:49 the type 1 term for this process 1
+04:51 
+
+04:51 milliseconds so CPU executes this
+04:54 
+
+04:54 process for 1 million seconds
+04:55 
+
+04:55 so once 1 millisecond time is over then
+04:59 
+
+04:59 the corresponding process will be
+05:00 
+
+05:00 transferred to some ready queue so again
+05:03 
+
+05:03 after some time CPU allocates again some
+05:07 
+
+05:07 again after something operating system
+05:09 
+
+05:09 allocates CPU to P naught so now CPU
+05:13 
+
+05:13 executes the process for man mu one more
+05:15 
+
+05:15 milliseconds so once that one
+05:17 
+
+05:17 millisecond Stein is expired then
+05:20 
+
+05:20 operating system transfers the process
+05:22 
+
+05:22 to the ready queue after some time
+05:24 
+
+05:24 operating system allocates CPU to the P
+05:28 
+
+05:28 dot so now CPU executes the process for
+05:30 
+
+05:30 1 milliseconds
+05:32 
+
+05:32 so how many how much time it will takes
+05:35 
+
+05:35 here here it will takes totally we need
+05:38 
+
+05:38 to shift the processes for 15 times so
+05:41 
+
+05:41 operating system has to be allocate CPU
+05:44 
+
+05:44 for this process 15 times why because we
+05:47 
+
+05:47 have to execute this process for 15
+05:49 
+
+05:49 milliseconds so here see here operating
+05:52 
+
+05:52 system that means short attention unit
+05:54 
+
+05:54 we had shortened up scheduler either
+05:56 
+
+05:56 needs to allocate CPU for this process
+06:00 
+
+06:00 15 times here wrong direction till a
+06:04 
+
+06:04 shorter am Shakira medium term scheduler
+06:06 
+
+06:06 all are nothing but parts of operating
+06:08 
+
+06:08 system operating system has several
+06:11 
+
+06:11 functionalities like process management
+06:13 
+
+06:13 memory management divert management file
+06:16 
+
+06:16 management disk management
+06:17 
+
+06:17 so here shaders are nothing but some
+06:20 
+
+06:20 operating system programs only working
+06:22 
+
+06:22 so he had what we are doing long term
+06:25 
+
+06:25 schedule
+06:26 
+
+06:26 if loading process P naught from hardest
+06:31 
+
+06:31 to the main memory only once
+06:33 
+
+06:34 various short-term scheduler is
+06:37 
+
+06:37 allocating CPU to process P not 15 times
+06:42 
+
+06:42 so that means which a jeweler we are
+06:45 
+
+06:45 using more frequently we are using
+06:48 
+
+06:48 chartarum scheduler more more frequently
+06:52 
+
+06:52 various long-term scheduler very very
+06:55 
+
+06:55 less frequently and one more important
+06:58 
+
+06:58 point here is long-term scheduler
+07:01 
+
+07:01 controls degree of multi programming
+07:05 
+
+07:05 long term scheduler controls degree of
+07:09 
+
+07:09 multi programming we know what is degree
+07:12 
+
+07:12 of multi programming degree of multi
+07:14 
+
+07:14 programming means how many number of
+07:16 
+
+07:17 programs we are loading from we are
+07:20 
+
+07:20 learning from hardest to the main memory
+07:22 
+
+07:22 so here long term scheduler is loading
+07:25 
+
+07:25 the processes from hard disk to their
+07:28 
+
+07:28 main memory here why placing the
+07:31 
+
+07:31 processes from hard disk into the main
+07:34 
+
+07:34 memory the long-term scheduler has to
+07:37 
+
+07:37 select a process that contains CPU
+07:40 
+
+07:40 bounded inspections as well as I go
+07:43 
+
+07:43 bounded inspections mainly there are two
+07:46 
+
+07:46 types of processes are they fast due
+07:49 
+
+07:49 process is CPU bounded process what is
+07:53 
+
+07:53 the first process CPU bounded process
+07:56 
+
+07:56 vega's the second type of process is
+07:59 
+
+07:59 ievo bounded closes what is the second
+08:03 
+
+08:03 type of process I hope Onate process CPU
+08:06 
+
+08:06 bounded process means CPU instructions
+08:09 
+
+08:09 are more various aegyo instructions are
+08:13 
+
+08:13 less various ievo bounded process means
+08:17 
+
+08:17 ievo instructions are more various
+08:21 
+
+08:21 CPU instructions are less let us assume
+08:25 
+
+08:25 that long term scheduler loads a cpu
+08:29 
+
+08:29 bounded process from hard disk into the
+08:31 
+
+08:32 main memory then what is the problem
+08:34 
+
+08:34 here
+08:34 
+
+08:34 CPU bounded process means that
+08:37 
+
+08:37 rose's contains more CPU instructions
+08:39 
+
+08:40 that process contains less I ho
+08:43 
+
+08:43 instructions that means we are not
+08:45 
+
+08:45 utilizing I go in the effective manner
+08:48 
+
+08:48 we have several iPod images but we are
+08:52 
+
+08:52 wasting those iPod images we are
+08:54 
+
+08:54 utilizing only CPU that is the problem
+08:57 
+
+08:57 here likewise let us assume that
+08:60 
+
+08:60 operating system loads a process which
+09:03 
+
+09:03 has more IO into the main memory from
+09:06 
+
+09:06 the hard disk then what is the problem
+09:08 
+
+09:08 here I have a bounded process means it
+09:11 
+
+09:11 contains more IO instructions and less
+09:14 
+
+09:14 CPU instructions so that means here we
+09:17 
+
+09:17 here we are utilizing only iboard images
+09:21 
+
+09:21 we are not utilizing the CPU so CPU is
+09:25 
+
+09:25 wasted now so that's why while placing a
+09:28 
+
+09:28 process from hard disk into the main
+09:31 
+
+09:31 memory long-term shape jeweler has to
+09:34 
+
+09:34 select a process that contains
+09:37 
+
+09:37 combination of CPU bounded instructions
+09:40 
+
+09:40 as the less I go bounded inspections if
+09:43 
+
+09:43 the process is not like that then
+09:47 
+
+09:47 utilization of the CPU is very very less
+09:49 
+
+09:49 as well as utilization of I go devices
+09:52 
+
+09:52 are also very very less so this is about
+09:55 
+
+09:55 what is wrong connection unit and what
+09:57 
+
+09:57 is short and head unit now let's see
+09:59 
+
+09:59 about bodies medium dimensional unit
+10:01 
+
+10:01 medium dharam secular is mainly useful
+10:04 
+
+10:04 by implementing swapping concept so
+10:08 
+
+10:08 static means let the CPU is executing a
+10:12 
+
+10:12 process at that time it receives an
+10:15 
+
+10:15 interrupt signal from the operating
+10:17 
+
+10:17 system
+10:17 
+
+10:17 so whenever CPU receives interrupt
+10:20 
+
+10:20 signal then CPU stops execution of that
+10:23 
+
+10:23 process so that process that partially
+10:26 
+
+10:26 executed process will be Spafford out
+10:29 
+
+10:29 into the secondary memory such as hard
+10:32 
+
+10:32 disk that swapping should be done by
+10:35 
+
+10:35 medium term she Judith okay and after
+10:39 
+
+10:39 some time that partially executed
+10:41 
+
+10:41 process from the hard disk will be moved
+10:44 
+
+10:44 to the ready queue that process is known
+10:46 
+
+10:46 as slappy so what is medium term
+10:49 
+
+10:49 you let medium-term scheduler is mainly
+10:52 
+
+10:52 useful by implementing swapping lets CPU
+10:57 
+
+10:57 is executing a process at that time
+10:60 
+
+10:60 operating system sends an interrupt
+11:03 
+
+11:03 signal to the CPU so CPU stops execution
+11:07 
+
+11:07 of that process that partially executed
+11:10 
+
+11:10 process will be Swofford to the hard
+11:13 
+
+11:13 disk so that should be done by the
+11:15 
+
+11:15 medium-term scheduler so medium-term
+11:18 
+
+11:18 schedulers vaps
+11:19 
+
+11:19 a partially executed process from main
+11:23 
+
+11:23 memory to the secondary memory that that
+11:26 
+
+11:26 should be that staffing should be done
+11:28 
+
+11:28 by media term scheduler and that process
+11:30 
+
+11:30 is known as swap out after some time a
+11:34 
+
+11:34 partially executed process from the
+11:37 
+
+11:37 secondary memory we this map or into the
+11:39 
+
+11:39 main memory that is nothing but ready
+11:42 
+
+11:42 queue okay let's take an example so that
+11:45 
+
+11:45 we will get the perfect clarity here we
+11:47 
+
+11:47 have reading you ready Geo contains a
+11:50 
+
+11:50 list of processes which are ready for
+11:52 
+
+11:52 execution and Shantaram showed you the
+11:55 
+
+11:55 allocates one of the process from ready
+11:57 
+
+11:57 queue to the CPU he and my CPU is
+12:01 
+
+12:01 executing your process let us assume
+12:03 
+
+12:03 that CPU receives an interrupt from the
+12:06 
+
+12:06 operating system so CPU stops execution
+12:09 
+
+12:09 of that process so that process will be
+12:11 
+
+12:11 fair food out into the hard disk
+12:16 
+
+12:16 this value is damn time ETM time
+12:18 
+
+12:18 schedule and this closes his glorious
+12:20 
+
+12:20 swap out so he who will stop the program
+12:24 
+
+12:24 from main memory to the secondary memory
+12:27 
+
+12:27 that's wrapping is done by media
+12:29 
+
+12:29 interruption unit and this process is
+12:31 
+
+12:31 Luria's spamming so after some time that
+12:35 
+
+12:35 partially executed process here we have
+12:38 
+
+12:38 partially executed swaggered process so
+12:42 
+
+12:42 after some time operating systems
+12:45 
+
+12:45 perhaps the process from secondary
+12:47 
+
+12:47 memory to the main memory that is ridicu
+12:50 
+
+12:50 and this process is known as swapping so
+12:53 
+
+12:53 swapping means swapping a program from
+12:55 
+
+12:55 secondary memory to the
+12:57 
+
+12:57 when a few such as Bank memory okay here
+13:01 
+
+13:01 we have survival rating you let us
+13:03 
+
+13:03 assume that CPU is executing a process
+13:05 
+
+13:05 during that that process is requiring
+13:10 
+
+13:10 some i/o operation so here CPU is I will
+13:15 
+
+13:15 now so CPU can do and will be shifted to
+13:17 
+
+13:17 some other process here the process is
+13:19 
+
+13:19 waiting for samaya operation so that
+13:21 
+
+13:21 process will be sent to the I go waiting
+13:24 
+
+13:24 you are debates cube so once that
+13:26 
+
+13:26 process has completed its i/o operations
+13:28 
+
+13:28 then the process will be moved to the
+13:30 
+
+13:30 data cube okay so this is about medium
+13:33 
+
+13:33 direction do that okay so medium a
+13:35 
+
+13:35 theorem showed you that perhaps a
+13:37 
+
+13:37 process from main memory to the
+13:38 
+
+13:38 secondary memory

@@ -1,0 +1,535 @@
+00:00 In this video, we are going to discuss
+00:02 
+
+00:02 about SRTF scheduling algorithm. SRTF
+00:07 
+
+00:07 stands for shortest remaining time first
+00:10 
+
+00:10 scheduling algorithm.
+00:12 
+
+00:12 This is primitive scheduling algorithm,
+00:15 
+
+00:15 whereas SJF is non-primitive scheduling
+00:18 
+
+00:18 algorithm. We know what is primitive
+00:20 
+
+00:20 scheduling algorithm. We can print the
+00:23 
+
+00:23 execution of a process. So, while the
+00:26 
+
+00:26 CPU is executing a process, then we can
+00:29 
+
+00:29 print execution of that process. So,
+00:33 
+
+00:33 that process execution will be stopped.
+00:35 
+
+00:35 So, CPU control will be shifted to some
+00:37 
+
+00:37 other process. So, CPU starts executing
+00:40 
+
+00:40 that process.
+00:42 
+
+00:42 So, why it is named as shortest
+00:44 
+
+00:44 remaining time first scheduling
+00:46 
+
+00:46 algorithm is
+00:47 
+
+00:47 let us assume that CPU is executing a
+00:50 
+
+00:50 process, then
+00:52 
+
+00:52 if a new process whose burst time is
+00:55 
+
+00:55 shorter than
+00:57 
+
+00:57 the remaining burst time of the
+00:59 
+
+00:59 currently running process,
+01:01 
+
+01:01 then CPU stops execution of the
+01:04 
+
+01:04 currently running process.
+01:05 
+
+01:05 Why because the remaining burst time of
+01:08 
+
+01:08 the currently running process is it is
+01:11 
+
+01:11 larger than the new process burst time.
+01:14 
+
+01:14 So, CPU stops execution of the currently
+01:17 
+
+01:17 running process, and then CPU starts
+01:20 
+
+01:20 executing the new process. Okay? Uh so,
+01:23 
+
+01:23 that is the reason why it is named as
+01:25 
+
+01:25 shortest remaining time first. So, the
+01:28 
+
+01:28 remaining burst time of the currently
+01:30 
+
+01:30 running process will be compared with
+01:32 
+
+01:32 new process burst time. If new process
+01:35 
+
+01:35 burst time is shorter than the currently
+01:39 
+
+01:39 running process remaining burst time,
+01:42 
+
+01:42 then the execution of the currently
+01:44 
+
+01:44 running process will be stopped, and CPU
+01:47 
+
+01:47 will starts executing the new process.
+01:50 
+
+01:50 Let us solve the problem with the help
+01:52 
+
+01:52 of shortest remaining time first
+01:54 
+
+01:54 scheduling algorithm. Four processes are
+01:56 
+
+01:56 given. These are the arrival times and
+01:59 
+
+01:59 these are the burst times. Now, let us
+02:01 
+
+02:01 draw the Gantt chart.
+02:04 
+
+02:04 Gantt chart.
+02:09 
+
+02:09 So, totally how many processes are
+02:10 
+
+02:10 there? So, totally we have four
+02:12 
+
+02:12 processes.
+02:17 
+
+02:17 At the arrival time zero, we have only
+02:19 
+
+02:19 P1 process in the ready queue.
+02:22 
+
+02:22 We don't have any other process in the
+02:24 
+
+02:24 ready queue. So, CPU starts executing P1
+02:27 
+
+02:27 process.
+02:28 
+
+02:28 So, CPU starts executing P1 process. P1
+02:31 
+
+02:31 process came into the ready queue at
+02:33 
+
+02:33 zero milliseconds.
+02:34 
+
+02:34 So, for how many milliseconds CPU
+02:37 
+
+02:37 executes P1 process? At the arrival time
+02:40 
+
+02:40 one, we will have P2 process in the
+02:43 
+
+02:43 ready queue.
+02:44 
+
+02:44 Whose burst time is shorter than the
+02:48 
+
+02:48 remaining burst time of the currently
+02:50 
+
+02:50 running process. So, that's why CPU
+02:52 
+
+02:52 executes P1 process for only 1
+02:55 
+
+02:55 millisecond. Why because at 1
+02:58 
+
+02:58 millisecond, we will get P2 process in
+03:00 
+
+03:00 the ready queue. Whose burst time is
+03:03 
+
+03:03 shorter, okay? So, CPU executes P1
+03:06 
+
+03:06 process for only 1 millisecond. Why
+03:08 
+
+03:08 because at 1 millisecond, P2 process
+03:11 
+
+03:11 will gets into the ready queue. So, now
+03:13 
+
+03:13 the remaining burst time of the
+03:15 
+
+03:15 P1 process is CPU has completed 1
+03:18 
+
+03:18 millisecond of its execution. So, 8 - 1
+03:21 
+
+03:21 means 7 milliseconds, okay? Now, we will
+03:24 
+
+03:24 have two processes in the ready queue.
+03:27 
+
+03:27 At 1 millisecond, though they they are
+03:29 
+
+03:29 zero and one.
+03:31 
+
+03:31 Zero process remaining burst time seven.
+03:34 
+
+03:34 Whereas
+03:35 
+
+03:35 this P2 process burst time is 4
+03:38 
+
+03:38 milliseconds. So, the burst time four is
+03:41 
+
+03:41 shorter than the remaining burst time of
+03:44 
+
+03:44 the P1 process. So, that's why now CPU
+03:47 
+
+03:47 starts executing P2 process. Why because
+03:49 
+
+03:49 P2 burst time is shorter than the
+03:53 
+
+03:53 remaining burst time of the P1.
+03:55 
+
+03:55 So, CPU starts executing P2 process.
+03:58 
+
+03:58 So, what is the burst time of P2
+03:60 
+
+03:60 process? 4 milliseconds.
+04:02 
+
+04:02 At 2 and 3, we will have 9 and
+04:06 
+
+04:06 at 2 arrival time and at 3 arrival time,
+04:09 
+
+04:09 we will have two more processes in the
+04:11 
+
+04:11 ready queue, P3 and P4, whose burst
+04:14 
+
+04:14 times are 9 and 5. So, 9 is greater than
+04:16 
+
+04:16 4 as well as 5 is greater than 4. So,
+04:19 
+
+04:19 CPU
+04:21 
+
+04:21 com- CPU completes the entire duration
+04:24 
+
+04:24 of the P2. Why because this burst time
+04:26 
+
+04:26 is shorter than 7, 9, and 5. So, now CPU
+04:32 
+
+04:32 completes the execution of the P2
+04:34 
+
+04:34 process. So, 1 + 4 means 5. So, at 5
+04:37 
+
+04:37 milliseconds,
+04:38 
+
+04:38 CPU has completed this P2 process
+04:41 
+
+04:41 execution. Now, uh yet 5 milliseconds of
+04:45 
+
+04:45 time, we will have all these processes
+04:47 
+
+04:47 in the system. So, zero P1 process burst
+04:50 
+
+04:50 time is 7. P3 process burst time is 9.
+04:54 
+
+04:54 P4 process burst time is 5 milliseconds.
+04:56 
+
+04:56 So, there are no more new processes
+04:59 
+
+04:59 which comes into the ready queue. Now,
+05:01 
+
+05:01 based upon the burst time, CPU will
+05:03 
+
+05:03 complete their execution. So, out of 7,
+05:06 
+
+05:06 9, and 5, 5 is the shorter value. So, P4
+05:09 
+
+05:09 process will gets executed. 5 + 5 means
+05:12 
+
+05:12 10. So, at 10 milliseconds of time, P4
+05:15 
+
+05:15 process has completed its execution.
+05:17 
+
+05:17 Next, out of 7 and 9, 7 is the shorter
+05:20 
+
+05:20 value. So, CPU starts executing P1. So,
+05:23 
+
+05:23 what is the remaining burst time of the
+05:25 
+
+05:25 P1? 7 milliseconds. So, 10 + 7 means 17
+05:28 
+
+05:28 milliseconds.
+05:29 
+
+05:29 Next, we will have one more process,
+05:31 
+
+05:31 that is P3. So, P3 process burst time is
+05:35 
+
+05:35 9 milliseconds. 17 + 9 means 26. So, at
+05:39 
+
+05:39 26 milliseconds of time, P3 process has
+05:42 
+
+05:42 completed its execution. Now, what is
+05:44 
+
+05:44 the completion time of P3? 26. Then, if
+05:48 
+
+05:48 we add all these burst times, then we
+05:50 
+
+05:50 have to get 26 as the output. So, 8 + 4
+05:54 
+
+05:54 12, 12 + 9
+05:56 
+
+05:56 Uh 12 + 9 means 21, 21 + 5 means 26. So,
+06:00 
+
+06:00 26 is nothing but the completion time of
+06:03 
+
+06:03 the P3 process. So, with this we can say
+06:05 
+
+06:05 that our problem is correct. Now, let us
+06:07 
+
+06:07 calculate the average waiting time and
+06:09 
+
+06:09 the average turnaround time. For that,
+06:11 
+
+06:11 first we have to calculate the
+06:13 
+
+06:13 completion time. Uh
+06:15 
+
+06:15 uh For completion time, it is better to
+06:17 
+
+06:17 go from right to left side. So, P3
+06:19 
+
+06:19 process completion time 26 ms.
+06:23 
+
+06:23 P1 process completion time 17 ms.
+06:27 
+
+06:27 P4 process completion time 10 ms.
+06:31 
+
+06:31 P2 process completion time 5 ms, okay?
+06:35 
+
+06:35 Next, let us calculate turnaround time.
+06:37 
+
+06:37 The formula for turnaround time is
+06:39 
+
+06:39 completion time minus arrival time. For
+06:41 
+
+06:41 P1 process completion time 17, arrival
+06:44 
+
+06:44 time zero. So, 17 minus zero means 17.
+06:47 
+
+06:47 For P2 process 5 and 1, so 5 minus 1
+06:49 
+
+06:49 means 4. For P3 26 2 24. For P4 10 3 7.
+06:56 
+
+06:56 So, 17 minus zero 17, 5 minus 1 4, 26
+06:60 
+
+06:60 minus 2 24, 10 minus 3 7.
+07:03 
+
+07:03 Now, let us calculate the waiting times.
+07:05 
+
+07:05 The formula for waiting time is
+07:06 
+
+07:06 turnaround time minus burst time. So, 17
+07:09 
+
+07:09 minus 8 means 9.
+07:11 
+
+07:11 4 minus 4 means zero.
+07:13 
+
+07:13 Uh 24 minus 9 means 15.
+07:16 
+
+07:16 7 minus 5 means 2. So, 17 minus 8 9, 4
+07:19 
+
+07:19 minus 4 zero, 24 minus 9 15, 7 minus 5
+07:23 
+
+07:23 2. Now, let us calculate average waiting
+07:25 
+
+07:25 time. 9 + 0 9, 9 + 15 24, 24 + 2 26. So,
+07:30 
+
+07:30 26 by 4. So, 4 fives 4 sixes are 24.
+07:34 
+
+07:34 2 6.5.
+07:36 
+
+07:36 Likewise, let us calculate the average
+07:38 
+
+07:38 turnaround time. 17 + 4 21, 21 + 24 45,
+07:42 
+
+07:42 45 + 7 means 52. So 24 + 7 31. 31 + 4
+07:47 
+
+07:47 35. 35 + 17 means 52. So 52 / 4 means
+07:52 
+
+07:52 4 13's are nothing but 52. Cutting these
+07:55 
+
+07:55 seconds. So in this way we can calculate
+07:57 
+
+07:57 the average waiting time and the average
+07:59 
+
+07:59 turn around time with the help of SRTF
+08:01 
+
+08:01 scheduling algorithm.

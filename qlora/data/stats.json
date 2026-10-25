@@ -1,0 +1,32 @@
+{
+  "scenarios": 600,
+  "examples": 468,
+  "train": 422,
+  "val": 46,
+  "by_action": {
+    "START_HINT": 57,
+    "WORKED_EXAMPLE": 23,
+    "FORMULA_REMINDER": 145,
+    "ALGORITHM_REMINDER": 63,
+    "CONFIRM_AND_EXTEND": 86,
+    "TARGETED_HINT": 23,
+    "SOCRATIC_HINT": 44,
+    "REVEAL_STEP": 27
+  },
+  "by_topic": {
+    "SRTF": 74,
+    "BANKERS": 46,
+    "FCFS": 56,
+    "RR": 78,
+    "SJF": 59,
+    "SEMAPHORE": 12,
+    "PRIORITY_P": 76,
+    "PRIORITY_NP": 67
+  },
+  "by_source": {
+    "template": 468
+  },
+  "rejected_candidates": {
+    "duplicate reply": 132
+  }
+}

@@ -1,0 +1,932 @@
+[
+ {
+  "url": "https://www.youtube.com/watch?v=wALJYsVqpa8",
+  "title": "Scheduling criteria: waiting, turnaround and response time",
+  "clips": [
+   {
+    "lesson": "basics"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Introduction to CPU Scheduling Criteria"
+   },
+   {
+    "start": "1:16",
+    "label": "CPU Utilization & Throughput Metrics"
+   },
+   {
+    "start": "2:46",
+    "label": "Turnaround Time (TAT) Definition & Formula"
+   },
+   {
+    "start": "4:31",
+    "label": "Waiting Time (WT) Definition & Formula"
+   },
+   {
+    "start": "6:11",
+    "label": "Response Time (RT) Definition & Context Switching"
+   },
+   {
+    "start": "7:26",
+    "label": "Optimization Goals (Maximize vs. Minimize) Summary"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=ProLx3vbhQs",
+  "title": "Preemptive and non-preemptive scheduling",
+  "clips": [
+   {
+    "lesson": "basics"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Introduction & The Short-Term Scheduler"
+   },
+   {
+    "start": "2:15",
+    "label": "Non-Preemptive Scheduling Explained"
+   },
+   {
+    "start": "5:30",
+    "label": "Preemptive Scheduling Explained"
+   },
+   {
+    "start": "9:10",
+    "label": "4 Circumstances of CPU Scheduling Decisions"
+   },
+   {
+    "start": "12:00",
+    "label": "Summary Comparison Table & Interview Key Points"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=K-Q85-gRmaA",
+  "title": "Types of schedulers: long, short and medium term",
+  "transcript": "K-Q85-gRmaA.txt",
+  "auto": false,
+  "clips": [
+   {
+    "lesson": "schedulers",
+    "start": "0:58",
+    "end": "9:57"
+   },
+   {
+    "lesson": "schedulers",
+    "start": "9:57",
+    "end": "13:40"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=iLC--q7O_KM",
+  "title": "Scheduling queues and the queueing diagram",
+  "clips": [
+   {
+    "lesson": "queues"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=GS6yIngO4eg",
+  "title": "FCFS scheduling and the convoy effect",
+  "clips": [
+   {
+    "lesson": "fcfs"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Concept of First-Come, First-Served (FCFS) Scheduling"
+   },
+   {
+    "start": "2:11",
+    "label": "FCFS Implementation via FIFO Queue & Non-Preemptive Nature"
+   },
+   {
+    "start": "5:31",
+    "label": "Solved Numerical Example (Gantt Chart, TAT, WT, RT Calculations)"
+   },
+   {
+    "start": "10:46",
+    "label": "Deep Dive into the Convoy Effect"
+   },
+   {
+    "start": "14:01",
+    "label": "Advantages, Disadvantages, and Summary"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=MS5EPNUFx4o",
+  "title": "Shortest Job First (SJF), non-preemptive",
+  "clips": [
+   {
+    "lesson": "sjf"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Introduction to Shortest Job First (SJF)"
+   },
+   {
+    "start": "1:46",
+    "label": "Non-Preemptive Execution & Optimality Proof Concept"
+   },
+   {
+    "start": "3:21",
+    "label": "Numerical Problem Walkthrough with Gantt Chart"
+   },
+   {
+    "start": "6:16",
+    "label": "Starvation Limitation & Summary"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=Tcuyr91Y_Ro",
+  "title": "SRTF: the rule and a worked example",
+  "transcript": "Tcuyr91Y_Ro.txt",
+  "auto": false,
+  "clips": [
+   {
+    "lesson": "srtf",
+    "start": "0:00",
+    "end": "8:05"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=V_uWh3AxXkQ",
+  "title": "SRTF: two more examples",
+  "clips": [
+   {
+    "lesson": "srtf"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Introduction & Problem Overview"
+   },
+   {
+    "start": "1:21",
+    "label": "Example 1: Complex Arrival Times & Detailed Gantt Chart Construction"
+   },
+   {
+    "start": "9:31",
+    "label": "Example 2: Handling Simultaneous Arrivals & Tie-Breaking Rules"
+   },
+   {
+    "start": "16:51",
+    "label": "Comparison of Averages & Exam Problem Tips"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=j5Rt_at1oyk",
+  "title": "Round Robin scheduling",
+  "clips": [
+   {
+    "lesson": "rr"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Introduction to Round Robin (RR) & Time Quantum (TQ)"
+   },
+   {
+    "start": "2:01",
+    "label": "Ready Queue Management Rules (FIFO circular queue)"
+   },
+   {
+    "start": "4:16",
+    "label": "Step-by-Step Solved Problem with Ready Queue & Gantt Chart"
+   },
+   {
+    "start": "8:31",
+    "label": "Impact of Time Quantum Length & Summary"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=WPQP4n3GIkw",
+  "title": "Non-preemptive priority scheduling",
+  "clips": [
+   {
+    "lesson": "priority"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Introduction to Non-Preemptive Priority Scheduling"
+   },
+   {
+    "start": "1:26",
+    "label": "Key Differences vs. Preemptive Priority Scheduling"
+   },
+   {
+    "start": "3:01",
+    "label": "Step-by-Step Solved Problem with Gantt Chart"
+   },
+   {
+    "start": "9:41",
+    "label": "Average Turnaround & Waiting Time Calculations"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=wldjV-wVvhg",
+  "title": "Preemptive priority scheduling",
+  "clips": [
+   {
+    "lesson": "priority"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Introduction to Priority Scheduling Concepts"
+   },
+   {
+    "start": "1:41",
+    "label": "Preemptive Mechanism & Priority Conventions (Higher Number = Higher Pr"
+   },
+   {
+    "start": "3:11",
+    "label": "Step-by-Step Solved Problem & Gantt Chart Construction"
+   },
+   {
+    "start": "7:51",
+    "label": "Starvation Problem & The Aging Solution"
+   },
+   {
+    "start": "9:16",
+    "label": "Summary & Key Takeaways"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=EsXBdY35ieA",
+  "title": "Multilevel feedback queue scheduling",
+  "transcript": "EsXBdY35ieA.txt",
+  "auto": false,
+  "clips": [
+   {
+    "lesson": "mlfq",
+    "start": "0:00",
+    "end": "8:30"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=gm7y51393oE",
+  "title": "Multilevel queue scheduling",
+  "clips": [
+   {
+    "lesson": "mlfq"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Introduction to Multilevel Queue Scheduling"
+   },
+   {
+    "start": "1:36",
+    "label": "Partitioning Ready Queue into Sub-Queues"
+   },
+   {
+    "start": "3:51",
+    "label": "Inter-Queue Scheduling Strategies & Fixed Priority"
+   },
+   {
+    "start": "6:16",
+    "label": "Disadvantages (Starvation) & Summary"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=QxXez-kiLf0",
+  "title": "The critical-section problem",
+  "clips": [
+   {
+    "lesson": "critical_section"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "General Code Structure of Cooperating Processes"
+   },
+   {
+    "start": "4:00",
+    "label": "The Three Mandatory Requirements"
+   },
+   {
+    "start": "11:30",
+    "label": "Hardware & Software Approaches Overview"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=mWO0XazqV9g",
+  "title": "Process synchronization: producer–consumer and the race condition",
+  "clips": [
+   {
+    "lesson": "critical_section"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Introduction to Process Synchronization"
+   },
+   {
+    "start": "4:30",
+    "label": "Producer-Consumer Problem"
+   },
+   {
+    "start": "10:15",
+    "label": "Race Condition"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=uj-zhs7cUSI",
+  "title": "Peterson's solution",
+  "clips": [
+   {
+    "lesson": "peterson"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Introduction & Shared Variables"
+   },
+   {
+    "start": "5:15",
+    "label": "Algorithm Structure"
+   },
+   {
+    "start": "12:00",
+    "label": "Formal Proof of Requirements"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=q7yksMlPlJU",
+  "title": "Synchronization hardware 1: TestAndSet",
+  "clips": [
+   {
+    "lesson": "tas"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Hardware Support for Synchronization"
+   },
+   {
+    "start": "6:15",
+    "label": "TestAndSet Instruction Mechanics"
+   },
+   {
+    "start": "15:30",
+    "label": "Using TestAndSet for Mutual Exclusion"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=boSYXHtW03M",
+  "title": "Synchronization hardware 2: swap",
+  "clips": [
+   {
+    "lesson": "tas"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Introduction to Swap Instruction"
+   },
+   {
+    "start": "3:30",
+    "label": "Implementing Mutual Exclusion with Swap"
+   },
+   {
+    "start": "8:15",
+    "label": "Comparison between TestAndSet and Swap"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=5y14WXehSU4",
+  "title": "Semaphores",
+  "clips": [
+   {
+    "lesson": "semaphores"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Definition & Classification"
+   },
+   {
+    "start": "3:30",
+    "label": "Non-Busy Waiting (Block & Wakeup) Implementation"
+   },
+   {
+    "start": "8:45",
+    "label": "Key Properties"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=RCoEAonrYEc",
+  "title": "Bounded-buffer (producer–consumer) problem with semaphores",
+  "clips": [
+   {
+    "lesson": "bounded_buffer"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Problem Definition & Shared Data"
+   },
+   {
+    "start": "5:00",
+    "label": "Producer Code Walkthrough"
+   },
+   {
+    "start": "11:30",
+    "label": "Consumer Code Walkthrough"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=yw__NPExEH4",
+  "title": "Bounded-buffer problem, part 1",
+  "clips": [
+   {
+    "lesson": "bounded_buffer"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Atomic Operations: Wait (P) and Signal (V)"
+   },
+   {
+    "start": "4:15",
+    "label": "Common Pitfalls & Deadlock Conditions"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=ntFKeKUQiQo",
+  "title": "Readers–writers problem",
+  "clips": [
+   {
+    "lesson": "readers_writers"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Problem Statement"
+   },
+   {
+    "start": "5:30",
+    "label": "First Readers-Writers Solution (Reader Priority)"
+   },
+   {
+    "start": "14:00",
+    "label": "Starvation Analysis"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=Z68js3PxzW0",
+  "title": "Dining philosophers problem",
+  "clips": [
+   {
+    "lesson": "dining"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Problem Setup"
+   },
+   {
+    "start": "4:30",
+    "label": "Naive Semaphore Solution"
+   },
+   {
+    "start": "9:15",
+    "label": "Deadlock Analysis & Solutions"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=wJc-YF_Hb2s",
+  "title": "Dining philosophers with monitors",
+  "clips": [
+   {
+    "lesson": "dining"
+   },
+   {
+    "lesson": "monitors"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "State Representations"
+   },
+   {
+    "start": "4:00",
+    "label": "Monitor Methods"
+   },
+   {
+    "start": "8:30",
+    "label": "Correctness Analysis"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=YUzuMxy2NQ0",
+  "title": "Monitors",
+  "clips": [
+   {
+    "lesson": "monitors"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Why Monitors?"
+   },
+   {
+    "start": "3:30",
+    "label": "Condition Variables"
+   },
+   {
+    "start": "7:15",
+    "label": "Monitor Execution Schemas"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=0u4ZyblK_YY",
+  "title": "What is a deadlock",
+  "clips": [
+   {
+    "lesson": "deadlock"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Definition of Deadlock"
+   },
+   {
+    "start": "2:15",
+    "label": "Real-World Analogy & Traffic Gridlock"
+   },
+   {
+    "start": "4:30",
+    "label": "Operating System Context"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=23xp51q2LP0",
+  "title": "Deadlock characterization: the four necessary conditions",
+  "clips": [
+   {
+    "lesson": "deadlock"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Introduction to Coffman Conditions"
+   },
+   {
+    "start": "1:30",
+    "label": "Detailed Breakdown of the 4 Conditions"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=7Z5gQSn4O3o",
+  "title": "Deadlock characterization: resource-allocation graph",
+  "clips": [
+   {
+    "lesson": "rag"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Graph Definitions & Components"
+   },
+   {
+    "start": "4:00",
+    "label": "Cycle Analysis & Deadlock Rules"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=XV_U8feLJqQ",
+  "title": "Deadlock avoidance: resource-allocation graph algorithm",
+  "clips": [
+   {
+    "lesson": "rag"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Safe vs Unsafe States"
+   },
+   {
+    "start": "3:15",
+    "label": "Claim Edges in RAG Algorithm"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=GAde3Skbs8I",
+  "title": "Deadlock prevention",
+  "clips": [
+   {
+    "lesson": "prevention"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Prevention Strategy"
+   },
+   {
+    "start": "2:30",
+    "label": "Eliminating Each Condition"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=QWCUyNUXEaA",
+  "title": "Methods for handling deadlocks",
+  "clips": [
+   {
+    "lesson": "prevention"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Strategy 1: Ignore Deadlocks (Ostrich Algorithm)"
+   },
+   {
+    "start": "8:15",
+    "label": "Strategy 2: Deadlock Prevention"
+   },
+   {
+    "start": "18:30",
+    "label": "Strategy 3: Deadlock Avoidance"
+   },
+   {
+    "start": "27:00",
+    "label": "Strategy 4: Deadlock Detection & Recovery"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=u2yvDHVVgZk",
+  "title": "Banker's algorithm: the safety algorithm",
+  "clips": [
+   {
+    "lesson": "bankers"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Data Structures"
+   },
+   {
+    "start": "5:00",
+    "label": "Safety Algorithm Steps & Numerical Problem"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=JYW0EXLFz94",
+  "title": "Banker's algorithm: the resource-request algorithm",
+  "clips": [
+   {
+    "lesson": "bankers"
+   },
+   {
+    "lesson": "bankers_request"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Resource Request Rules"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=AGZr5LaiyMg",
+  "title": "Deadlock detection: wait-for graph",
+  "clips": [
+   {
+    "lesson": "detection"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Wait-For Graph (WFG) Construction"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=13qiXk63MaM",
+  "title": "Deadlock detection with several instances of each resource",
+  "clips": [
+   {
+    "lesson": "detection"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Algorithm Structure & Execution"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=kOYTmxKpIms",
+  "title": "Deadlock recovery",
+  "clips": [
+   {
+    "lesson": "recovery"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Method 1: Process Termination"
+   },
+   {
+    "start": "3:00",
+    "label": "Method 2: Resource Preemption"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=fSMVWmGPqlM",
+  "title": "Inter-process communication: shared memory and message passing",
+  "transcript": "fSMVWmGPqlM.txt",
+  "auto": false,
+  "clips": [
+   {
+    "lesson": "ipc",
+    "start": "0:00",
+    "end": "5:08"
+   },
+   {
+    "lesson": "ipc",
+    "start": "14:11",
+    "end": "24:58"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=x1tg2YUCs-c",
+  "title": "Threads: single and multithreaded processes",
+  "clips": [
+   {
+    "lesson": "threads"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=SsiRHvFUpQQ",
+  "title": "CPU–I/O burst cycle: CPU-bound and I/O-bound processes",
+  "clips": [
+   {
+    "lesson": "burst_cycle"
+   }
+  ],
+  "chapters": [
+   {
+    "start": "0:00",
+    "label": "Introduction to Process Execution Lifecycle"
+   },
+   {
+    "start": "1:30",
+    "label": "CPU Burst vs. I/O Burst (The Burst Cycle)"
+   },
+   {
+    "start": "3:45",
+    "label": "Histogram of CPU Burst Durations"
+   },
+   {
+    "start": "6:00",
+    "label": "CPU-Bound Processes vs. I/O-Bound Processes"
+   },
+   {
+    "start": "8:00",
+    "label": "Impact on CPU Scheduling & Operating System Efficiency"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=aXIZnX55LCU",
+  "title": "fork() and wait() system calls",
+  "transcript": "aXIZnX55LCU.txt",
+  "auto": false,
+  "clips": [
+   {
+    "lesson": "fork",
+    "start": "0:00",
+    "end": "3:15"
+   },
+   {
+    "lesson": "fork",
+    "start": "7:45",
+    "end": "10:20"
+   },
+   {
+    "lesson": "wait",
+    "start": "16:40",
+    "end": "19:16"
+   },
+   {
+    "lesson": "syscalls",
+    "start": "0:00",
+    "end": "3:15"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=B45JhBhPmm8",
+  "title": "exec(): execv() and execlp()",
+  "transcript": "B45JhBhPmm8.txt",
+  "auto": false,
+  "clips": [
+   {
+    "lesson": "exec",
+    "start": "0:00",
+    "end": "4:20"
+   },
+   {
+    "lesson": "exec",
+    "start": "6:53",
+    "end": "9:24"
+   },
+   {
+    "lesson": "syscalls",
+    "start": "0:00",
+    "end": "1:20"
+   }
+  ]
+ },
+ {
+  "url": "https://www.youtube.com/watch?v=nNgk6xHXtJ4",
+  "title": "sleep() and exit() system calls",
+  "transcript": "nNgk6xHXtJ4.txt",
+  "auto": false,
+  "clips": [
+   {
+    "lesson": "sleep_exit",
+    "start": "0:00",
+    "end": "1:40"
+   },
+   {
+    "lesson": "sleep_exit",
+    "start": "6:17",
+    "end": "8:56"
+   }
+  ]
+ }
+]

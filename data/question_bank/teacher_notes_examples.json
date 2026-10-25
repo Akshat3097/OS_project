@@ -1,0 +1,2122 @@
+[
+ {
+  "id": "NOTES-FCFS-EX1",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 24",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "FCFS, all arrive at 0 in the order P1, P2, P3.",
+  "kind": "scheduling",
+  "algorithm": "FCFS",
+  "processes": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "burst": 24
+   },
+   {
+    "pid": "P2",
+    "arrival": 0,
+    "burst": 3
+   },
+   {
+    "pid": "P3",
+    "arrival": 0,
+    "burst": 3
+   }
+  ],
+  "official": {
+   "avg_wt": 17
+  }
+ },
+ {
+  "id": "NOTES-FCFS-EX2",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 26-28",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Calculate the average waiting time and average turnaround time with FCFS.",
+  "kind": "scheduling",
+  "algorithm": "FCFS",
+  "processes": [
+   {
+    "pid": "P1",
+    "arrival": 4,
+    "burst": 5
+   },
+   {
+    "pid": "P2",
+    "arrival": 6,
+    "burst": 4
+   },
+   {
+    "pid": "P3",
+    "arrival": 0,
+    "burst": 3
+   },
+   {
+    "pid": "P4",
+    "arrival": 6,
+    "burst": 2
+   },
+   {
+    "pid": "P5",
+    "arrival": 5,
+    "burst": 4
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 9,
+    "P2": 17,
+    "P3": 3,
+    "P4": 19,
+    "P5": 13
+   },
+   "avg_tat": 8,
+   "avg_wt": 4.4
+  }
+ },
+ {
+  "id": "NOTES-FCFS-EX3",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 29",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "FCFS with an idle gap; all metrics.",
+  "kind": "scheduling",
+  "algorithm": "FCFS",
+  "processes": [
+   {
+    "pid": "P1",
+    "arrival": 2,
+    "burst": 2
+   },
+   {
+    "pid": "P2",
+    "arrival": 0,
+    "burst": 1
+   },
+   {
+    "pid": "P3",
+    "arrival": 2,
+    "burst": 3
+   },
+   {
+    "pid": "P4",
+    "arrival": 3,
+    "burst": 5
+   },
+   {
+    "pid": "P5",
+    "arrival": 4,
+    "burst": 4
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 4,
+    "P2": 1,
+    "P3": 7,
+    "P4": 12,
+    "P5": 16
+   },
+   "avg_tat": 5.8,
+   "avg_wt": 2.8,
+   "avg_rt": 2.8
+  }
+ },
+ {
+  "id": "NOTES-FCFS-EX4",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 30",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Three processes arrive at time 0 (FCFS).",
+  "kind": "scheduling",
+  "algorithm": "FCFS",
+  "processes": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "burst": 6
+   },
+   {
+    "pid": "P2",
+    "arrival": 0,
+    "burst": 3
+   },
+   {
+    "pid": "P3",
+    "arrival": 0,
+    "burst": 8
+   }
+  ],
+  "official": {
+   "avg_tat": 10.67,
+   "avg_wt": 5
+  }
+ },
+ {
+  "id": "NOTES-FCFS-EX5",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 31",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Three processes arriving at different times (FCFS).",
+  "kind": "scheduling",
+  "algorithm": "FCFS",
+  "processes": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "burst": 6
+   },
+   {
+    "pid": "P2",
+    "arrival": 4,
+    "burst": 3
+   },
+   {
+    "pid": "P3",
+    "arrival": 6,
+    "burst": 8
+   }
+  ],
+  "official": {
+   "avg_tat": 10.67,
+   "avg_wt": 5
+  },
+  "notes": "Slip in the slide: TAT was computed as CT \u2212 0 for every process (copied from Example 4). With the arrival times TAT = 6, 5, 11 (avg 7.33) and WT = 0, 2, 3 (avg 1.67). The Gantt chart itself is right."
+ },
+ {
+  "id": "NOTES-FCFS-EX6",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 32-38",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Example 6 \u2013 all metrics (FCFS).",
+  "kind": "scheduling",
+  "algorithm": "FCFS",
+  "processes": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "burst": 5
+   },
+   {
+    "pid": "P2",
+    "arrival": 2,
+    "burst": 3
+   },
+   {
+    "pid": "P3",
+    "arrival": 4,
+    "burst": 4
+   },
+   {
+    "pid": "P4",
+    "arrival": 6,
+    "burst": 6
+   },
+   {
+    "pid": "P5",
+    "arrival": 8,
+    "burst": 2
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 5,
+    "P2": 8,
+    "P3": 12,
+    "P4": 18,
+    "P5": 20
+   },
+   "avg_tat": 8.6,
+   "avg_wt": 4.6,
+   "avg_rt": 4.6,
+   "cpu_utilization": 100,
+   "throughput": 0.25,
+   "context_switches": 4
+  }
+ },
+ {
+  "id": "NOTES-SJF-EX1",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 40",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "SJF (non-preemptive), all arrive at 0.",
+  "kind": "scheduling",
+  "algorithm": "SJF",
+  "processes": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "burst": 6
+   },
+   {
+    "pid": "P2",
+    "arrival": 0,
+    "burst": 8
+   },
+   {
+    "pid": "P3",
+    "arrival": 0,
+    "burst": 7
+   },
+   {
+    "pid": "P4",
+    "arrival": 0,
+    "burst": 3
+   }
+  ],
+  "official": {
+   "avg_wt": 7
+  }
+ },
+ {
+  "id": "NOTES-SJF-EX5",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 48",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "SJF, three processes arriving at time 0.",
+  "kind": "scheduling",
+  "algorithm": "SJF",
+  "processes": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "burst": 10
+   },
+   {
+    "pid": "P2",
+    "arrival": 0,
+    "burst": 5
+   },
+   {
+    "pid": "P3",
+    "arrival": 0,
+    "burst": 8
+   }
+  ],
+  "official": {
+   "avg_tat": 13.67,
+   "avg_wt": 6
+  }
+ },
+ {
+  "id": "NOTES-SJF-EX6",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 49",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "SJF (non-preemptive), processes arriving at different times.",
+  "kind": "scheduling",
+  "algorithm": "SJF",
+  "processes": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "burst": 10
+   },
+   {
+    "pid": "P2",
+    "arrival": 1,
+    "burst": 3
+   },
+   {
+    "pid": "P3",
+    "arrival": 2,
+    "burst": 6
+   },
+   {
+    "pid": "P4",
+    "arrival": 3,
+    "burst": 4
+   },
+   {
+    "pid": "P5",
+    "arrival": 4,
+    "burst": 2
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 10,
+    "P2": 15,
+    "P3": 25,
+    "P4": 19,
+    "P5": 12
+   },
+   "avg_tat": 14.2,
+   "avg_wt": 9.2
+  }
+ },
+ {
+  "id": "NOTES-SJF-EX7",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 50-56",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Example 7 \u2013 all metrics (SJF, non-preemptive).",
+  "kind": "scheduling",
+  "algorithm": "SJF",
+  "processes": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "burst": 5
+   },
+   {
+    "pid": "P2",
+    "arrival": 2,
+    "burst": 3
+   },
+   {
+    "pid": "P3",
+    "arrival": 4,
+    "burst": 4
+   },
+   {
+    "pid": "P4",
+    "arrival": 6,
+    "burst": 6
+   },
+   {
+    "pid": "P5",
+    "arrival": 8,
+    "burst": 2
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 5,
+    "P2": 8,
+    "P3": 14,
+    "P4": 20,
+    "P5": 10
+   },
+   "avg_tat": 7.4,
+   "avg_wt": 3.4,
+   "avg_rt": 3.4,
+   "cpu_utilization": 100,
+   "throughput": 0.25,
+   "context_switches": 4
+  }
+ },
+ {
+  "id": "NOTES-SRTF-EX2",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 41-42",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "SRTF (preemptive SJF).",
+  "kind": "scheduling",
+  "algorithm": "SRTF",
+  "processes": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "burst": 8
+   },
+   {
+    "pid": "P2",
+    "arrival": 1,
+    "burst": 4
+   },
+   {
+    "pid": "P3",
+    "arrival": 2,
+    "burst": 9
+   },
+   {
+    "pid": "P4",
+    "arrival": 3,
+    "burst": 5
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 17,
+    "P2": 5,
+    "P3": 26,
+    "P4": 10
+   },
+   "avg_tat": 13,
+   "avg_wt": 6.5,
+   "avg_rt": 4.25
+  }
+ },
+ {
+  "id": "NOTES-SRTF-EX3",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 44-45",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "SRTF (preemptive SJF).",
+  "kind": "scheduling",
+  "algorithm": "SRTF",
+  "processes": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "burst": 12
+   },
+   {
+    "pid": "P2",
+    "arrival": 2,
+    "burst": 4
+   },
+   {
+    "pid": "P3",
+    "arrival": 3,
+    "burst": 6
+   },
+   {
+    "pid": "P4",
+    "arrival": 8,
+    "burst": 5
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 27,
+    "P2": 6,
+    "P3": 12,
+    "P4": 17
+   },
+   "avg_wt": 5.5
+  },
+  "notes": "P1's burst is 12; the handwritten 10 on the slide is what remains after P1 runs 0\u20132."
+ },
+ {
+  "id": "NOTES-SRTF-EX4",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 46-47",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "SRTF (preemptive SJF).",
+  "kind": "scheduling",
+  "algorithm": "SRTF",
+  "processes": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "burst": 10
+   },
+   {
+    "pid": "P2",
+    "arrival": 3,
+    "burst": 6
+   },
+   {
+    "pid": "P3",
+    "arrival": 7,
+    "burst": 1
+   },
+   {
+    "pid": "P4",
+    "arrival": 8,
+    "burst": 3
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 20,
+    "P2": 10,
+    "P3": 8,
+    "P4": 13
+   },
+   "avg_tat": 8.25
+  }
+ },
+ {
+  "id": "NOTES-PRIO-EX1",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 59",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Priority (non-preemptive), all arrive at 0; smallest integer = highest priority.",
+  "kind": "scheduling",
+  "algorithm": "PRIORITY_NP",
+  "processes": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "burst": 10,
+    "priority": 3
+   },
+   {
+    "pid": "P2",
+    "arrival": 0,
+    "burst": 1,
+    "priority": 1
+   },
+   {
+    "pid": "P3",
+    "arrival": 0,
+    "burst": 2,
+    "priority": 4
+   },
+   {
+    "pid": "P4",
+    "arrival": 0,
+    "burst": 1,
+    "priority": 5
+   },
+   {
+    "pid": "P5",
+    "arrival": 0,
+    "burst": 5,
+    "priority": 2
+   }
+  ],
+  "official": {
+   "avg_wt": 8.2
+  }
+ },
+ {
+  "id": "NOTES-PRIO-EX2",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 60-61",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Preemptive priority (0 is the highest priority). Average waiting time? (A) 29 (B) 30 (C) 31 (D) 32",
+  "kind": "scheduling",
+  "algorithm": "PRIORITY_P",
+  "processes": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "burst": 11,
+    "priority": 2
+   },
+   {
+    "pid": "P2",
+    "arrival": 5,
+    "burst": 28,
+    "priority": 0
+   },
+   {
+    "pid": "P3",
+    "arrival": 12,
+    "burst": 2,
+    "priority": 3
+   },
+   {
+    "pid": "P4",
+    "arrival": 2,
+    "burst": 10,
+    "priority": 1
+   },
+   {
+    "pid": "P5",
+    "arrival": 9,
+    "burst": 16,
+    "priority": 4
+   }
+  ],
+  "official": {
+   "wt": {
+    "P1": 38,
+    "P2": 0,
+    "P3": 37,
+    "P4": 28,
+    "P5": 42
+   },
+   "avg_wt": 29
+  }
+ },
+ {
+  "id": "NOTES-PRIO-EX3",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 62-64",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Priority non-preemptive; HIGHER number = higher priority. Average WT and TAT.",
+  "kind": "advanced",
+  "algorithm": "PRIORITY_NP",
+  "lower_is_higher": false,
+  "jobs": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "bursts": [
+     [
+      "CPU",
+      4
+     ]
+    ],
+    "priority": 2,
+    "queue": 1
+   },
+   {
+    "pid": "P2",
+    "arrival": 1,
+    "bursts": [
+     [
+      "CPU",
+      3
+     ]
+    ],
+    "priority": 3,
+    "queue": 1
+   },
+   {
+    "pid": "P3",
+    "arrival": 2,
+    "bursts": [
+     [
+      "CPU",
+      1
+     ]
+    ],
+    "priority": 4,
+    "queue": 1
+   },
+   {
+    "pid": "P4",
+    "arrival": 3,
+    "bursts": [
+     [
+      "CPU",
+      5
+     ]
+    ],
+    "priority": 5,
+    "queue": 1
+   },
+   {
+    "pid": "P5",
+    "arrival": 4,
+    "bursts": [
+     [
+      "CPU",
+      2
+     ]
+    ],
+    "priority": 5,
+    "queue": 1
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 4,
+    "P2": 15,
+    "P3": 12,
+    "P4": 9,
+    "P5": 11
+   },
+   "avg_tat": 8.2,
+   "avg_wt": 5.2
+  }
+ },
+ {
+  "id": "NOTES-PRIO-EX4",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 65-71",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Example 4 \u2013 Priority (non-preemptive), lower number = higher priority, all metrics.",
+  "kind": "scheduling",
+  "algorithm": "PRIORITY_NP",
+  "processes": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "burst": 5,
+    "priority": 2
+   },
+   {
+    "pid": "P2",
+    "arrival": 2,
+    "burst": 3,
+    "priority": 1
+   },
+   {
+    "pid": "P3",
+    "arrival": 4,
+    "burst": 4,
+    "priority": 3
+   },
+   {
+    "pid": "P4",
+    "arrival": 6,
+    "burst": 6,
+    "priority": 4
+   },
+   {
+    "pid": "P5",
+    "arrival": 8,
+    "burst": 2,
+    "priority": 2
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 5,
+    "P2": 8,
+    "P3": 14,
+    "P4": 20,
+    "P5": 10
+   },
+   "avg_tat": 7.4,
+   "avg_wt": 3.4,
+   "avg_rt": 3.4,
+   "cpu_utilization": 100,
+   "context_switches": 4
+  }
+ },
+ {
+  "id": "NOTES-RR-EX1",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 75-77",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Round Robin, all arrive at 0, time quantum 4 ms.",
+  "kind": "scheduling",
+  "algorithm": "RR",
+  "quantum": 4,
+  "processes": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "burst": 24
+   },
+   {
+    "pid": "P2",
+    "arrival": 0,
+    "burst": 3
+   },
+   {
+    "pid": "P3",
+    "arrival": 0,
+    "burst": 3
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 30,
+    "P2": 7,
+    "P3": 10
+   },
+   "avg_tat": 15.67,
+   "avg_wt": 5.67
+  }
+ },
+ {
+  "id": "NOTES-RR-EX2",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 78-84",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Round Robin, time quantum 2 units.",
+  "kind": "scheduling",
+  "algorithm": "RR",
+  "quantum": 2,
+  "processes": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "burst": 5
+   },
+   {
+    "pid": "P2",
+    "arrival": 1,
+    "burst": 3
+   },
+   {
+    "pid": "P3",
+    "arrival": 2,
+    "burst": 1
+   },
+   {
+    "pid": "P4",
+    "arrival": 3,
+    "burst": 2
+   },
+   {
+    "pid": "P5",
+    "arrival": 4,
+    "burst": 3
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 13,
+    "P2": 12,
+    "P3": 5,
+    "P4": 9,
+    "P5": 14
+   },
+   "avg_tat": 8.6,
+   "avg_wt": 5.8
+  }
+ },
+ {
+  "id": "NOTES-RR-EX3",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 85",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Round Robin, time quantum 3 ms.",
+  "kind": "scheduling",
+  "algorithm": "RR",
+  "quantum": 3,
+  "processes": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "burst": 8
+   },
+   {
+    "pid": "P2",
+    "arrival": 1,
+    "burst": 4
+   },
+   {
+    "pid": "P3",
+    "arrival": 2,
+    "burst": 9
+   },
+   {
+    "pid": "P4",
+    "arrival": 3,
+    "burst": 5
+   },
+   {
+    "pid": "P5",
+    "arrival": 4,
+    "burst": 2
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 25,
+    "P2": 18,
+    "P3": 28,
+    "P4": 23,
+    "P5": 14
+   },
+   "avg_tat": 19.6,
+   "avg_wt": 14
+  },
+  "notes": "Slip in the slide: its Gantt chart cycles P1\u2192P2\u2192P3\u2192P4\u2192P5 in index order. In a real ready queue P1 (preempted at 3) is ahead of P5 (arrives at 4), so the chart is P1 P2 P3 P4 P1 P5 P2 P3 P4 P1 P3 and P5 finishes at 17, not 14: avg TAT 20.2, avg WT 14.6. Example 2 on slides 78-84 uses the real queue order."
+ },
+ {
+  "id": "NOTES-RR-PRIO-EX4",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 86",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Round Robin with priority (q = 4): the highest priority runs first, equal priorities share the CPU in Round Robin, and a newly arrived higher-priority process waits for the current time slice to end. Lower number = higher priority.",
+  "kind": "advanced",
+  "queue_preempt": "slice_end",
+  "queues": [
+   {
+    "qid": 2,
+    "algorithm": "RR",
+    "quantum": 4
+   },
+   {
+    "qid": 3,
+    "algorithm": "RR",
+    "quantum": 4
+   },
+   {
+    "qid": 5,
+    "algorithm": "RR",
+    "quantum": 4
+   }
+  ],
+  "jobs": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "bursts": [
+     [
+      "CPU",
+      12
+     ]
+    ],
+    "priority": 3,
+    "queue": 3
+   },
+   {
+    "pid": "P2",
+    "arrival": 5,
+    "bursts": [
+     [
+      "CPU",
+      19
+     ]
+    ],
+    "priority": 3,
+    "queue": 3
+   },
+   {
+    "pid": "P3",
+    "arrival": 8,
+    "bursts": [
+     [
+      "CPU",
+      21
+     ]
+    ],
+    "priority": 5,
+    "queue": 5
+   },
+   {
+    "pid": "P4",
+    "arrival": 11,
+    "bursts": [
+     [
+      "CPU",
+      13
+     ]
+    ],
+    "priority": 2,
+    "queue": 2
+   },
+   {
+    "pid": "P5",
+    "arrival": 15,
+    "bursts": [
+     [
+      "CPU",
+      15
+     ]
+    ],
+    "priority": 3,
+    "queue": 3
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 29,
+    "P2": 56,
+    "P3": 80,
+    "P4": 25,
+    "P5": 59
+   },
+   "avg_tat": 42,
+   "avg_wt": 26,
+   "avg_rt": 14.6
+  },
+  "notes": "Modelled as one Round Robin queue per priority level; a higher level waits for the running slice to end (P4 arrives at 11 but starts at 12)."
+ },
+ {
+  "id": "NOTES-IO-FCFS",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 87-100",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Each process: CPU burst 1, I/O burst, CPU burst 2. FCFS (non-preemptive); I/O happens in parallel. All performance metrics.",
+  "kind": "advanced",
+  "algorithm": "FCFS",
+  "jobs": [
+   {
+    "pid": "P1",
+    "arrival": 2,
+    "bursts": [
+     [
+      "CPU",
+      3
+     ],
+     [
+      "IO",
+      4
+     ],
+     [
+      "CPU",
+      2
+     ]
+    ],
+    "priority": 0,
+    "queue": 1
+   },
+   {
+    "pid": "P2",
+    "arrival": 3,
+    "bursts": [
+     [
+      "CPU",
+      2
+     ],
+     [
+      "IO",
+      2
+     ],
+     [
+      "CPU",
+      2
+     ]
+    ],
+    "priority": 0,
+    "queue": 1
+   },
+   {
+    "pid": "P3",
+    "arrival": 6,
+    "bursts": [
+     [
+      "CPU",
+      4
+     ],
+     [
+      "IO",
+      3
+     ],
+     [
+      "CPU",
+      1
+     ]
+    ],
+    "priority": 0,
+    "queue": 1
+   },
+   {
+    "pid": "P4",
+    "arrival": 7,
+    "bursts": [
+     [
+      "CPU",
+      2
+     ],
+     [
+      "IO",
+      1
+     ],
+     [
+      "CPU",
+      2
+     ]
+    ],
+    "priority": 0,
+    "queue": 1
+   },
+   {
+    "pid": "P5",
+    "arrival": 18,
+    "bursts": [
+     [
+      "CPU",
+      2
+     ],
+     [
+      "IO",
+      2
+     ],
+     [
+      "CPU",
+      1
+     ]
+    ],
+    "priority": 0,
+    "queue": 1
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 15,
+    "P2": 17,
+    "P3": 18,
+    "P4": 20,
+    "P5": 25
+   },
+   "wt": {
+    "P1": 8,
+    "P2": 10,
+    "P3": 7,
+    "P4": 9,
+    "P5": 4
+   },
+   "avg_tat": 11.8,
+   "avg_wt": 7.6,
+   "avg_rt": 1.8,
+   "cpu_utilization": 84,
+   "throughput": 0.2,
+   "context_switches": 8
+  },
+  "notes": "The notes take WT = TAT \u2212 total CPU burst, so I/O time counts as waiting."
+ },
+ {
+  "id": "NOTES-IO-SRTF",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 101-114",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "SRTF with an I/O burst (P2: CPU 2, I/O 3, CPU 2).",
+  "kind": "advanced",
+  "algorithm": "SRTF",
+  "jobs": [
+   {
+    "pid": "P1",
+    "arrival": 2,
+    "bursts": [
+     [
+      "CPU",
+      4
+     ]
+    ],
+    "priority": 0,
+    "queue": 1
+   },
+   {
+    "pid": "P2",
+    "arrival": 3,
+    "bursts": [
+     [
+      "CPU",
+      2
+     ],
+     [
+      "IO",
+      3
+     ],
+     [
+      "CPU",
+      2
+     ]
+    ],
+    "priority": 0,
+    "queue": 1
+   },
+   {
+    "pid": "P3",
+    "arrival": 5,
+    "bursts": [
+     [
+      "CPU",
+      1
+     ]
+    ],
+    "priority": 0,
+    "queue": 1
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 9,
+    "P2": 11,
+    "P3": 6
+   },
+   "wt": {
+    "P1": 3,
+    "P2": 4,
+    "P3": 0
+   },
+   "avg_tat": 5.33,
+   "avg_wt": 2.33,
+   "avg_rt": 0,
+   "cpu_utilization": 81.8,
+   "context_switches": 4
+  }
+ },
+ {
+  "id": "NOTES-IO-RR",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 115-126",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Round Robin with an I/O burst, time quantum 2.",
+  "kind": "advanced",
+  "algorithm": "RR",
+  "quantum": 2,
+  "jobs": [
+   {
+    "pid": "P1",
+    "arrival": 1,
+    "bursts": [
+     [
+      "CPU",
+      3
+     ]
+    ],
+    "priority": 0,
+    "queue": 1
+   },
+   {
+    "pid": "P2",
+    "arrival": 2,
+    "bursts": [
+     [
+      "CPU",
+      2
+     ],
+     [
+      "IO",
+      2
+     ],
+     [
+      "CPU",
+      2
+     ]
+    ],
+    "priority": 0,
+    "queue": 1
+   },
+   {
+    "pid": "P3",
+    "arrival": 3,
+    "bursts": [
+     [
+      "CPU",
+      1
+     ]
+    ],
+    "priority": 0,
+    "queue": 1
+   },
+   {
+    "pid": "P4",
+    "arrival": 5,
+    "bursts": [
+     [
+      "CPU",
+      2
+     ]
+    ],
+    "priority": 0,
+    "queue": 1
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 7,
+    "P2": 11,
+    "P3": 6,
+    "P4": 9
+   },
+   "wt": {
+    "P1": 3,
+    "P2": 5,
+    "P3": 2,
+    "P4": 2
+   },
+   "avg_tat": 5.5,
+   "avg_wt": 2.75,
+   "avg_rt": 1.25,
+   "cpu_utilization": 90.9,
+   "context_switches": 5
+  },
+  "notes": "Arithmetic slip in the performance table: the waiting times 3 + 5 + 2 + 2 add up to 12, not 11, so avg WT = 3.0 (counting I/O as waiting, as the notes do) or 2.5 without the I/O. Everything else matches."
+ },
+ {
+  "id": "NOTES-IO-PRIO",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 127-147",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Preemptive priority with I/O bursts; lower number = higher priority.",
+  "kind": "advanced",
+  "algorithm": "PRIORITY_P",
+  "jobs": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "bursts": [
+     [
+      "CPU",
+      4
+     ],
+     [
+      "IO",
+      2
+     ],
+     [
+      "CPU",
+      2
+     ]
+    ],
+    "priority": 2,
+    "queue": 1
+   },
+   {
+    "pid": "P2",
+    "arrival": 2,
+    "bursts": [
+     [
+      "CPU",
+      3
+     ],
+     [
+      "IO",
+      1
+     ],
+     [
+      "CPU",
+      1
+     ]
+    ],
+    "priority": 1,
+    "queue": 1
+   },
+   {
+    "pid": "P3",
+    "arrival": 5,
+    "bursts": [
+     [
+      "CPU",
+      5
+     ]
+    ],
+    "priority": 3,
+    "queue": 1
+   },
+   {
+    "pid": "P4",
+    "arrival": 9,
+    "bursts": [
+     [
+      "CPU",
+      2
+     ]
+    ],
+    "priority": 4,
+    "queue": 1
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 12,
+    "P2": 7,
+    "P3": 15,
+    "P4": 17
+   },
+   "wt": {
+    "P1": 6,
+    "P2": 1,
+    "P3": 5,
+    "P4": 4
+   },
+   "avg_tat": 6.25,
+   "avg_wt": 4,
+   "avg_rt": 2.25,
+   "cpu_utilization": 100,
+   "context_switches": 8
+  },
+  "notes": "Two arithmetic slips in the performance table (the Gantt chart and completion times are right): P4's waiting time is 8 \u2212 2 = 6, not 4, and the TAT column adds up to 12 + 5 + 10 + 8 = 35, not 25. So avg TAT = 8.75 and avg WT = 18/4 = 4.5 (counting I/O as waiting, as the notes do)."
+ },
+ {
+  "id": "NOTES-MLQ-EX",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 152-153",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Multilevel queue: Queue 1 RR (q = 2), Queue 2 FCFS, Queue 3 SJF; higher queues first.",
+  "kind": "advanced",
+  "queues": [
+   {
+    "qid": 1,
+    "algorithm": "RR",
+    "quantum": 2
+   },
+   {
+    "qid": 2,
+    "algorithm": "FCFS"
+   },
+   {
+    "qid": 3,
+    "algorithm": "SJF"
+   }
+  ],
+  "jobs": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "bursts": [
+     [
+      "CPU",
+      5
+     ]
+    ],
+    "priority": 0,
+    "queue": 1
+   },
+   {
+    "pid": "P2",
+    "arrival": 1,
+    "bursts": [
+     [
+      "CPU",
+      4
+     ]
+    ],
+    "priority": 0,
+    "queue": 2
+   },
+   {
+    "pid": "P3",
+    "arrival": 2,
+    "bursts": [
+     [
+      "CPU",
+      3
+     ]
+    ],
+    "priority": 0,
+    "queue": 3
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 5,
+    "P2": 9,
+    "P3": 12
+   }
+  }
+ },
+ {
+  "id": "NOTES-MLFQ-EX",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 159-181",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Multilevel feedback queue: Q1 RR (q = 2), Q2 RR (q = 4), Q3 FCFS. New processes enter Q1; a process that uses its whole quantum moves down one queue.",
+  "kind": "advanced",
+  "feedback": true,
+  "queues": [
+   {
+    "qid": 1,
+    "algorithm": "RR",
+    "quantum": 2
+   },
+   {
+    "qid": 2,
+    "algorithm": "RR",
+    "quantum": 4
+   },
+   {
+    "qid": 3,
+    "algorithm": "FCFS"
+   }
+  ],
+  "jobs": [
+   {
+    "pid": "P1",
+    "arrival": 0,
+    "bursts": [
+     [
+      "CPU",
+      8
+     ]
+    ],
+    "priority": 0,
+    "queue": 1
+   },
+   {
+    "pid": "P2",
+    "arrival": 1,
+    "bursts": [
+     [
+      "CPU",
+      4
+     ]
+    ],
+    "priority": 0,
+    "queue": 1
+   },
+   {
+    "pid": "P3",
+    "arrival": 2,
+    "bursts": [
+     [
+      "CPU",
+      2
+     ]
+    ],
+    "priority": 0,
+    "queue": 1
+   },
+   {
+    "pid": "P4",
+    "arrival": 4,
+    "bursts": [
+     [
+      "CPU",
+      1
+     ]
+    ],
+    "priority": 0,
+    "queue": 1
+   },
+   {
+    "pid": "P5",
+    "arrival": 6,
+    "bursts": [
+     [
+      "CPU",
+      5
+     ]
+    ],
+    "priority": 0,
+    "queue": 1
+   },
+   {
+    "pid": "P6",
+    "arrival": 8,
+    "bursts": [
+     [
+      "CPU",
+      3
+     ]
+    ],
+    "priority": 0,
+    "queue": 1
+   }
+  ],
+  "official": {
+   "ct": {
+    "P1": 23,
+    "P2": 17,
+    "P3": 6,
+    "P4": 7,
+    "P5": 20,
+    "P6": 21
+   },
+   "avg_tat": 12.17,
+   "avg_wt": 8.33,
+   "avg_rt": 1.17,
+   "cpu_utilization": 100,
+   "context_switches": 10
+  }
+ },
+ {
+  "id": "NOTES-BANKERS-EX1",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 221-230",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Calculate the Need matrix. Is the system in a safe state? If yes, find a safe sequence.",
+  "kind": "bankers",
+  "resources": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "allocation": [
+   [
+    0,
+    0,
+    1,
+    2
+   ],
+   [
+    1,
+    0,
+    0,
+    0
+   ],
+   [
+    1,
+    3,
+    5,
+    4
+   ],
+   [
+    0,
+    6,
+    3,
+    2
+   ],
+   [
+    0,
+    0,
+    1,
+    4
+   ]
+  ],
+  "maximum": [
+   [
+    0,
+    0,
+    1,
+    2
+   ],
+   [
+    1,
+    7,
+    5,
+    0
+   ],
+   [
+    2,
+    3,
+    5,
+    6
+   ],
+   [
+    0,
+    6,
+    5,
+    2
+   ],
+   [
+    0,
+    6,
+    5,
+    6
+   ]
+  ],
+  "available": [
+   1,
+   5,
+   2,
+   0
+  ],
+  "official": {
+   "safe": true,
+   "sequence": [
+    "P0",
+    "P2",
+    "P3",
+    "P4",
+    "P1"
+   ]
+  }
+ },
+ {
+  "id": "NOTES-BANKERS-EX2",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 232-254",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "1. Need matrix. 2. Safe state and safe sequence. 3. Can a request (1,1,0,0) from P1 be granted immediately?",
+  "request": {
+   "process": 1,
+   "vector": [
+    1,
+    1,
+    0,
+    0
+   ]
+  },
+  "kind": "bankers",
+  "resources": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "allocation": [
+   [
+    2,
+    0,
+    0,
+    1
+   ],
+   [
+    3,
+    1,
+    2,
+    1
+   ],
+   [
+    2,
+    1,
+    0,
+    3
+   ],
+   [
+    1,
+    3,
+    1,
+    2
+   ],
+   [
+    1,
+    4,
+    3,
+    2
+   ]
+  ],
+  "maximum": [
+   [
+    4,
+    2,
+    1,
+    2
+   ],
+   [
+    5,
+    2,
+    5,
+    2
+   ],
+   [
+    2,
+    3,
+    1,
+    6
+   ],
+   [
+    1,
+    4,
+    2,
+    4
+   ],
+   [
+    3,
+    6,
+    6,
+    5
+   ]
+  ],
+  "available": [
+   3,
+   3,
+   2,
+   1
+  ],
+  "official": {
+   "safe": true,
+   "sequence": [
+    "P0",
+    "P3",
+    "P1",
+    "P2",
+    "P4"
+   ],
+   "also_accepted": [
+    [
+     "P0",
+     "P3",
+     "P4",
+     "P1",
+     "P2"
+    ],
+    [
+     "P0",
+     "P3",
+     "P2",
+     "P1",
+     "P4"
+    ],
+    [
+     "P0",
+     "P3",
+     "P2",
+     "P4",
+     "P1"
+    ]
+   ],
+   "request_granted": true,
+   "sequence_after_request": [
+    "P0",
+    "P3",
+    "P4",
+    "P1",
+    "P2"
+   ]
+  }
+ },
+ {
+  "id": "NOTES-BANKERS-EX2-P4",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 255-257",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "4. Can a request (0,0,2,0) from P4 be granted immediately?",
+  "request": {
+   "process": 4,
+   "vector": [
+    0,
+    0,
+    2,
+    0
+   ]
+  },
+  "kind": "bankers",
+  "resources": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "allocation": [
+   [
+    2,
+    0,
+    0,
+    1
+   ],
+   [
+    3,
+    1,
+    2,
+    1
+   ],
+   [
+    2,
+    1,
+    0,
+    3
+   ],
+   [
+    1,
+    3,
+    1,
+    2
+   ],
+   [
+    1,
+    4,
+    3,
+    2
+   ]
+  ],
+  "maximum": [
+   [
+    4,
+    2,
+    1,
+    2
+   ],
+   [
+    5,
+    2,
+    5,
+    2
+   ],
+   [
+    2,
+    3,
+    1,
+    6
+   ],
+   [
+    1,
+    4,
+    2,
+    4
+   ],
+   [
+    3,
+    6,
+    6,
+    5
+   ]
+  ],
+  "available": [
+   3,
+   3,
+   2,
+   1
+  ],
+  "official": {
+   "safe": true,
+   "request_granted": false,
+   "reason": "After pretending to allocate, Available = (3,3,0,1) and no process's Need fits, so the state is unsafe."
+  }
+ },
+ {
+  "id": "NOTES-DETECTION-EX",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 260-261",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Deadlock detection (A 7, B 2, C 6 instances). Is the system deadlocked? (Request matrix given; here Need = Request.)",
+  "maximum": [
+   [
+    0,
+    1,
+    0
+   ],
+   [
+    4,
+    0,
+    2
+   ],
+   [
+    3,
+    0,
+    3
+   ],
+   [
+    3,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    4
+   ]
+  ],
+  "kind": "bankers",
+  "mode": "detection",
+  "resources": [
+   "A",
+   "B",
+   "C"
+  ],
+  "allocation": [
+   [
+    0,
+    1,
+    0
+   ],
+   [
+    2,
+    0,
+    0
+   ],
+   [
+    3,
+    0,
+    3
+   ],
+   [
+    2,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    2
+   ]
+  ],
+  "available": [
+   0,
+   0,
+   0
+  ],
+  "official": {
+   "safe": true,
+   "sequence": [
+    "P0",
+    "P2",
+    "P3",
+    "P1",
+    "P4"
+   ]
+  }
+ },
+ {
+  "id": "NOTES-DETECTION-EX-B",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides 262",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Same system, but P2 requests one more instance of C. Is there a deadlock now?",
+  "maximum": [
+   [
+    0,
+    1,
+    0
+   ],
+   [
+    4,
+    0,
+    2
+   ],
+   [
+    3,
+    0,
+    4
+   ],
+   [
+    3,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    4
+   ]
+  ],
+  "kind": "bankers",
+  "mode": "detection",
+  "resources": [
+   "A",
+   "B",
+   "C"
+  ],
+  "allocation": [
+   [
+    0,
+    1,
+    0
+   ],
+   [
+    2,
+    0,
+    0
+   ],
+   [
+    3,
+    0,
+    3
+   ],
+   [
+    2,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    2
+   ]
+  ],
+  "available": [
+   0,
+   0,
+   0
+  ],
+  "official": {
+   "safe": false,
+   "reason": "Only P0 can finish; P1, P2, P3 and P4 are deadlocked."
+  }
+ },
+ {
+  "id": "THEORY-DEADLOCK-PROBLEM",
+  "paper": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "question": "slides Theory/Deadlock problem.pdf",
+  "source": "Teacher's notes, BCSE303L Module 3 (CPU scheduling & deadlocks)",
+  "text": "Four processes P0\u2013P3, resources R1 (2), R2 (3), R3, R4 (2). R1: one each to P0, P1. R2: one each to P1, P2, P3. R3: two allocated to P0, one free. R4: one each to P3, P2. Requests: P1 \u2192 1 R1; P0 \u2192 1 R2; P3 \u2192 1 R1 + 2 R2; P0 and P2 \u2192 1 R3 each. Draw the resource-allocation graph, apply the Banker's (detection) algorithm, and give the safe sequence if there is no deadlock.",
+  "kind": "bankers",
+  "mode": "detection",
+  "resources": [
+   "R1",
+   "R2",
+   "R3",
+   "R4"
+  ],
+  "allocation": [
+   [
+    1,
+    0,
+    2,
+    0
+   ],
+   [
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    0,
+    1,
+    0,
+    1
+   ],
+   [
+    0,
+    1,
+    0,
+    1
+   ]
+  ],
+  "maximum": [
+   [
+    1,
+    1,
+    3,
+    0
+   ],
+   [
+    2,
+    1,
+    0,
+    0
+   ],
+   [
+    0,
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    3,
+    0,
+    1
+   ]
+  ],
+  "available": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "official": {},
+  "notes": "No answer key in the notes. Engine: no deadlock; P2 \u2192 P0 \u2192 P1 \u2192 P3. (Read as R3 having 3 instances; if R3 has 2 with one held by P0, Available is the same and so is the answer.)"
+ }
+]

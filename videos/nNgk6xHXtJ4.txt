@@ -1,0 +1,514 @@
+00:01 in this video we are going to discuss
+00:04 
+
+00:04 about Sleep System call and exit system
+00:09 
+
+00:09 call first let us see about Sleep System
+00:13 
+
+00:13 call it will keeps a running process in
+00:18 
+
+00:18 sleep
+00:19 
+
+00:19 State up to a specified time in
+00:24 
+
+00:24 seconds so if you want to keep a process
+00:29 
+
+00:29 in sleep state
+00:31 
+
+00:31 up to a specified number of
+00:35 
+
+00:35 milliseconds then we can use the Sleep
+00:39 
+
+00:39 System call so it allows a process to
+00:45 
+
+00:45 relinquish relinquish means to release
+00:49 
+
+00:49 the
+00:50 
+
+00:50 CPU and enter a sleep state for a set
+00:56 
+
+00:56 period so whenever Sleep System call is
+01:01 
+
+01:01 executed then the corresponding process
+01:05 
+
+01:05 will be in sleep State up to a specified
+01:10 
+
+01:10 time in
+01:12 
+
+01:12 seconds so at the time the CPU will be
+01:17 
+
+01:17 idal why because the process is in sleep
+01:22 
+
+01:22 state so operating system will release
+01:27 
+
+01:27 the CPU from that process
+01:31 
+
+01:31 so CPU can be allocated to some other
+01:34 
+
+01:34 process during that sleep time period
+01:39 
+
+01:39 now let us see an example program here
+01:42 
+
+01:42 we have hash include
+01:45 
+
+01:45 stdio.h why because we are using printer
+01:48 
+
+01:48 function printer function is available
+01:51 
+
+01:51 in
+01:52 
+
+01:52 stdio.h next we have uni sd. H in this
+01:57 
+
+01:57 program we are using for system called
+02:01 
+
+02:01 Sleep System call uh these two system
+02:04 
+
+02:04 calls are available in uni
+02:07 
+
+02:07 sd. next main function we have two
+02:11 
+
+02:11 variables called I comma P ID next p ID
+02:15 
+
+02:15 equal to Fork we know about Fork it is
+02:18 
+
+02:18 useful in order to create a child
+02:22 
+
+02:22 process Fork system called will returns
+02:27 
+
+02:27 zero if it is a child process
+02:31 
+
+02:31 otherwise it will returns a positive
+02:34 
+
+02:34 number so let us see the logic if p
+02:37 
+
+02:37 double equal to zero so here Fork system
+02:40 
+
+02:40 call is rning a value if it is a child
+02:44 
+
+02:44 process that value will be zero so P ID
+02:48 
+
+02:48 will become zero so if P ID dou equal to
+02:51 
+
+02:51 zero then we can say that it is a child
+02:54 
+
+02:54 process so child process will gets
+02:57 
+
+02:57 executed so likewise uh we know that
+03:01 
+
+03:01 fork system called return two values
+03:03 
+
+03:03 zero for the child process as well as
+03:07 
+
+03:07 non zero for the parent process so let
+03:10 
+
+03:10 us assume that fork system call is rning
+03:13 
+
+03:13 a non zero value a positive value
+03:16 
+
+03:16 positive value for the parent process
+03:18 
+
+03:18 let it be 100 so now P will becomes 100
+03:22 
+
+03:22 100 equal to zero false so else block
+03:25 
+
+03:25 will gets executed so when this else
+03:28 
+
+03:28 block will gets executed the else block
+03:30 
+
+03:30 will gets executed when it is a parent
+03:33 
+
+03:33 process so here if body will be executed
+03:36 
+
+03:36 as well as else body will be executed if
+03:39 
+
+03:39 body will be executed for parent process
+03:42 
+
+03:42 else body will be execute I'm sorry if
+03:45 
+
+03:45 body will be executed for the child
+03:47 
+
+03:47 process whereas else body will be
+03:50 
+
+03:50 executed for the parent process so let
+03:52 
+
+03:52 us assume that initially for system
+03:55 
+
+03:55 called WR a value called zero so zero
+03:58 
+
+03:58 means it is a child process so now p is
+04:00 
+
+04:00 z 0 equal to0 yes condition is true so
+04:05 
+
+04:05 now child process will gets executed so
+04:07 
+
+04:07 this is the body of the child
+04:10 
+
+04:10 process so first what will happen print
+04:12 
+
+04:12 of child process started so that message
+04:15 
+
+04:15 will be printed here we are displaying
+04:17 
+
+04:17 the numbers from 0 to 10 but before
+04:20 
+
+04:20 displaying the number we are using the
+04:22 
+
+04:22 Sleep System call let us assume that we
+04:25 
+
+04:25 uses five so this five represents 5
+04:28 
+
+04:28 seconds so first off after 5 Seconds
+04:31 
+
+04:31 zero will be printed next in the next
+04:34 
+
+04:34 iteration I will becomes one after 5
+04:37 
+
+04:37 Seconds one will be printed after 5
+04:39 
+
+04:39 Seconds two will be printed so likewise
+04:42 
+
+04:42 we will get the output from 0 to 10 next
+04:45 
+
+04:45 after executing the for Loop this print
+04:47 
+
+04:47 out function will will gets executed
+04:49 
+
+04:49 child process ends if body is executed
+04:53 
+
+04:53 so else body won't execute so this
+04:56 
+
+04:56 program will be executed one more time
+04:58 
+
+04:58 we know that Fork system call returns
+05:01 
+
+05:01 twice values next let us assume that
+05:04 
+
+05:04 fork system call returns a positive
+05:06 
+
+05:06 number let that number is 100 so now 100
+05:10 
+
+05:10 will be stored in P ID 100 equal to zero
+05:14 
+
+05:14 false so else block will gets executed
+05:17 
+
+05:17 so what is the else block here this is
+05:19 
+
+05:19 nothing but parent process code so I am
+05:21 
+
+05:21 parent parent process s so this is the
+05:24 
+
+05:24 body now let's execute this program so
+05:28 
+
+05:28 already we have the program
+05:31 
+
+05:31 so our name of the program is sleep. H
+05:34 
+
+05:34 so this is our program here we are using
+05:37 
+
+05:37 sleep of one so one means one means
+05:41 
+
+05:41 after every 1 second that value will be
+05:44 
+
+05:44 printed that value will be printed now
+05:47 
+
+05:47 let us uh compile the
+05:50 
+
+05:50 program yeah next to run the
+05:54 
+
+05:54 program so if you see here first parent
+05:57 
+
+05:57 process got executed I am parent parent
+06:00 
+
+06:00 processes next for every 1 second we are
+06:03 
+
+06:03 getting the output I equal to 6 I equal
+06:06 
+
+06:06 to 7 I equal to 8 I equal to 9 so child
+06:09 
+
+06:09 child process started next this Pro this
+06:12 
+
+06:12 statement is child process ends so our
+06:14 
+
+06:14 program got executed successfully now
+06:17 
+
+06:17 let us see the next system call that is
+06:20 
+
+06:20 exit system call exit system call is
+06:23 
+
+06:23 used in the operating system to
+06:26 
+
+06:26 terminate a process so in order to
+06:29 
+
+06:29 terminate the process
+06:30 
+
+06:30 we can use the exit system call it
+06:33 
+
+06:33 specifies that the program has completed
+06:36 
+
+06:36 its execution and it is ready to be
+06:40 
+
+06:40 terminated so when we can use exit
+06:42 
+
+06:42 system call if all the operations on the
+06:45 
+
+06:45 program are M so that means if the
+06:48 
+
+06:48 program has completed its execution then
+06:51 
+
+06:51 we can use the exit system call the exit
+06:54 
+
+06:54 system called can takes exit status code
+06:58 
+
+06:58 which is a small integer value that the
+07:02 
+
+07:02 process return returns to the operating
+07:04 
+
+07:04 system so through exit system call we
+07:06 
+
+07:06 have to pass an integer value so that is
+07:09 
+
+07:09 nothing but status uh so here zero zero
+07:13 
+
+07:13 indicates that it is successful
+07:15 
+
+07:15 execution whereas non zero indicates
+07:18 
+
+07:18 that it is error condition so via exit
+07:21 
+
+07:21 system call we can pass either zero or
+07:24 
+
+07:24 non zero zero means successful
+07:27 
+
+07:27 successful execution non zero means
+07:30 
+
+07:30 error condition so here we are using
+07:32 
+
+07:32 stdlib.h why because exit system call is
+07:37 
+
+07:37 available in stdlib.h so print off
+07:40 
+
+07:40 before exit so this message will be
+07:42 
+
+07:42 printed first next after this statement
+07:46 
+
+07:46 we have pre exit of zero what is zero
+07:49 
+
+07:49 successful termination so whenever the
+07:52 
+
+07:52 statement is executed then our program
+07:55 
+
+07:55 will gets terminated so we will get only
+07:59 
+
+07:59 uh uh the the message which is before
+08:02 
+
+08:02 the exit function so before the exit
+08:04 
+
+08:04 system call we we have before exit so
+08:07 
+
+08:07 only this message will be printed after
+08:10 
+
+08:10 exit system call we have after exit this
+08:13 
+
+08:13 this statement won't gets displayed why
+08:15 
+
+08:15 because whenever exit system call is
+08:17 
+
+08:17 executed then the program will be exited
+08:20 
+
+08:20 the program will be terminated now let
+08:22 
+
+08:22 us see our
+08:24 
+
+08:24 program Pico exit. C this is our program
+08:28 
+
+08:28 so this is our progr program now let us
+08:30 
+
+08:30 do the
+08:32 
+
+08:32 compilation
+08:35 
+
+08:35 compilation s let us do the
+08:39 
+
+08:39 execution so if you see here we got
+08:41 
+
+08:41 before exit so after that we have exit
+08:44 
+
+08:44 system call whever exit system call is
+08:47 
+
+08:47 executed then the process the program
+08:49 
+
+08:49 will be terminated so this is about
+08:52 
+
+08:52 sleep and exit system called in
+08:54 
+
+08:54 operating system

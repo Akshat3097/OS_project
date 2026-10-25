@@ -1,0 +1,107 @@
+[
+ {
+  "judge": "Keyword rubric (offline)",
+  "decisions": 164,
+  "agree": 106,
+  "should": 55,
+  "missed": 5,
+  "mis_expected": 10,
+  "mis_found": 2,
+  "mis_false": 3,
+  "should_not": 109,
+  "false_credit": 53,
+  "false_by_kind": {
+   "partial": 5,
+   "paraphrase": 0,
+   "misconception": 15,
+   "salad": 32,
+   "off-topic": 0,
+   "wrong rule": 1
+  },
+  "seconds": 0.0
+ },
+ {
+  "judge": "llama3.1:8b, ratings only",
+  "decisions": 164,
+  "agree": 107,
+  "should": 55,
+  "missed": 6,
+  "mis_expected": 10,
+  "mis_found": 6,
+  "mis_false": 21,
+  "should_not": 109,
+  "false_credit": 51,
+  "false_by_kind": {
+   "partial": 10,
+   "paraphrase": 3,
+   "misconception": 11,
+   "salad": 27,
+   "off-topic": 0,
+   "wrong rule": 0
+  },
+  "seconds": 1.9526896412308152
+ },
+ {
+  "judge": "llama3.1:8b, ratings only + keyword cap",
+  "decisions": 164,
+  "agree": 122,
+  "should": 55,
+  "missed": 7,
+  "mis_expected": 10,
+  "mis_found": 6,
+  "mis_false": 21,
+  "should_not": 109,
+  "false_credit": 35,
+  "false_by_kind": {
+   "partial": 3,
+   "paraphrase": 0,
+   "misconception": 5,
+   "salad": 27,
+   "off-topic": 0,
+   "wrong rule": 0
+  },
+  "seconds": 1.9526896412308152
+ },
+ {
+  "judge": "llama3.1:8b, evidence quotes checked",
+  "decisions": 164,
+  "agree": 155,
+  "should": 55,
+  "missed": 0,
+  "mis_expected": 10,
+  "mis_found": 5,
+  "mis_false": 1,
+  "should_not": 109,
+  "false_credit": 9,
+  "false_by_kind": {
+   "partial": 2,
+   "paraphrase": 0,
+   "misconception": 5,
+   "salad": 1,
+   "off-topic": 0,
+   "wrong rule": 1
+  },
+  "seconds": 2.7141498681661247
+ },
+ {
+  "judge": "llama3.1:8b, evidence quotes checked + keyword cap",
+  "decisions": 164,
+  "agree": 156,
+  "should": 55,
+  "missed": 1,
+  "mis_expected": 10,
+  "mis_found": 5,
+  "mis_false": 1,
+  "should_not": 109,
+  "false_credit": 7,
+  "false_by_kind": {
+   "partial": 0,
+   "paraphrase": 0,
+   "misconception": 5,
+   "salad": 1,
+   "off-topic": 0,
+   "wrong rule": 1
+  },
+  "seconds": 2.7141498681661247
+ }
+]

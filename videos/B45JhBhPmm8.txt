@@ -1,0 +1,526 @@
+00:00 in this class we are going to discuss
+00:04 
+
+00:04 about ex EC system
+00:07 
+
+00:07 call ex EC system call is
+00:11 
+
+00:11 useful in order to
+00:13 
+
+00:13 replace the current process image with
+00:17 
+
+00:17 the new process image so by using ex e
+00:23 
+
+00:23 system call we can
+00:26 
+
+00:26 replace current process with a new
+00:30 
+
+00:30 process
+00:31 
+
+00:31 we have various versions of EX EC system
+00:37 
+
+00:37 call but the most commonly used ex EC
+00:43 
+
+00:43 system calls are first one is EX ecv
+00:49 
+
+00:49 system call second one is ex EC LP
+00:54 
+
+00:54 system call so first let us see about EX
+00:58 
+
+00:58 ecv system call here the use of EX ecv
+01:03 
+
+01:03 system call is similar to ex EC system
+01:08 
+
+01:08 call only so by using EX ecv system call
+01:14 
+
+01:14 we can replace current process with new
+01:19 
+
+01:19 process now let us see the Prototype of
+01:21 
+
+01:21 the EX ecv system call it returns an
+01:26 
+
+01:26 integer
+01:27 
+
+01:27 value and it accepts two or arguments
+01:31 
+
+01:31 the first argument is a path second
+01:35 
+
+01:35 argument is a character array pointer a
+01:39 
+
+01:39 character array pointer so let us see
+01:42 
+
+01:42 with the help of an
+01:44 
+
+01:44 example hash include
+01:47 
+
+01:47 stdio.h why because in this program we
+01:50 
+
+01:50 are using printer function printer
+01:53 
+
+01:53 function is available in
+01:56 
+
+01:56 stdio.h so next statement hash include
+01:60 
+
+01:60 uni
+02:01 
+
+02:01 std. here we are using a system called
+02:04 
+
+02:04 called EX ecv system call that system
+02:09 
+
+02:09 call is available in hash include Unis
+02:13 
+
+02:13 std. so initially we are declaring a
+02:16 
+
+02:16 character pointer array we know the
+02:19 
+
+02:19 Syntax for the character pointer array
+02:22 
+
+02:22 so car space yri name of the variable is
+02:26 
+
+02:26 temp temp of three uh so here this is
+02:29 
+
+02:29 nothing but command line argument that
+02:31 
+
+02:31 we saw in C language so we can provide
+02:34 
+
+02:34 some arguments here we can provide some
+02:38 
+
+02:38 arguments so in command line arguments
+02:41 
+
+02:41 we know that we will use this character
+02:44 
+
+02:44 pointer array but command L arguments
+02:47 
+
+02:47 means the arguments will be Pro passed
+02:49 
+
+02:49 from the command prompt but that concept
+02:53 
+
+02:53 won't be uh won't be needed here so
+02:57 
+
+02:57 tempo of three means totally we can Pro
+02:59 
+
+02:59 provide three arguments the first
+03:02 
+
+03:02 argument temp of Z equal to within the
+03:05 
+
+03:05 double quotation l l LS so listing the
+03:08 
+
+03:08 file the second argument M of 1 equal to
+03:12 
+
+03:12 minus L minus L next the last argument
+03:16 
+
+03:16 must be null null indicates that this is
+03:20 
+
+03:20 the last argument so next we are using
+03:23 
+
+03:23 exv system call we know that it accept
+03:27 
+
+03:27 two arguments the first argument is is a
+03:31 
+
+03:31 path here the path is here we are using
+03:35 
+
+03:35 LS LS command LS command is available in
+03:39 
+
+03:39 bin command comma whereas what is the
+03:42 
+
+03:42 second argument second argument is new
+03:45 
+
+03:45 process here the new process is a
+03:48 
+
+03:48 character pointer array so here temp is
+03:51 
+
+03:51 nothing but a character pointer array so
+03:54 
+
+03:54 that's why we use a temp here whenever
+03:57 
+
+03:57 the statement is executed then the
+04:00 
+
+04:00 current process that is bin SL LS will
+04:05 
+
+04:05 be replaced with new process that is
+04:09 
+
+04:09 temp here what is temp temp is nothing
+04:12 
+
+04:12 but LS minus L command so we will get
+04:16 
+
+04:16 output of the ls minus L command only
+04:20 
+
+04:20 suppose if this command is not executed
+04:23 
+
+04:23 then this statement will be
+04:25 
+
+04:25 executed so if this command will gets if
+04:28 
+
+04:28 the system call got executed
+04:30 
+
+04:30 then the statement won't print so print
+04:33 
+
+04:33 of the statement won't print so the
+04:35 
+
+04:35 statement won't be displayed suppose if
+04:37 
+
+04:37 the system call doesn't execute then the
+04:40 
+
+04:40 statement will print now let us execute
+04:42 
+
+04:42 this program so already we have the
+04:45 
+
+04:45 program PCO name of the program is ex
+04:48 
+
+04:48 ecv do Z here I'm using ubun environment
+04:52 
+
+04:52 I'm using Pico editor so this is the
+04:55 
+
+04:55 program so Car Star temp of three temp
+04:58 
+
+04:58 of zero means y temp of one means minus
+05:01 
+
+05:01 n here we have to provide the commands
+05:03 
+
+05:03 within the double quotations here we are
+05:06 
+
+05:06 writing LS within the double quotation
+05:08 
+
+05:08 minus L within the double quotation but
+05:10 
+
+05:10 this null is not a command this null is
+05:13 
+
+05:13 a keyword so we should not this is
+05:15 
+
+05:15 nothing but a character poined array we
+05:18 
+
+05:18 know that we know
+05:19 
+
+05:19 about an array character array character
+05:22 
+
+05:22 array is nothing but a string string
+05:24 
+
+05:24 means a collection of characters
+05:26 
+
+05:26 enclosed in double quotations so that's
+05:28 
+
+05:28 why we need to close LS n minus L within
+05:31 
+
+05:31 the double quotations but for null there
+05:34 
+
+05:34 is no need of any double quotation why
+05:37 
+
+05:37 because this is a keyo various temp
+05:39 
+
+05:39 second argument is that character
+05:41 
+
+05:41 pointer ARR that is nothing but temp now
+05:44 
+
+05:44 let us execute the program so GCC so
+05:49 
+
+05:49 what is the name of the
+05:50 
+
+05:50 program GCC ex ecv do c yeah before
+05:58 
+
+05:58 executing the command let us has execute
+06:00 
+
+06:00 LS minus L LS command is useful in order
+06:04 
+
+06:04 to list all the files and subdirectories
+06:08 
+
+06:08 directories present in the directory
+06:10 
+
+06:10 minus L defines long listing so we will
+06:13 
+
+06:13 get output like this so we have 16 files
+06:16 
+
+06:16 and this is nothing but long listing so
+06:19 
+
+06:19 if we execute the program/ a. out then
+06:23 
+
+06:23 we will get the output of Ls minus L
+06:26 
+
+06:26 only why because LS minus L is nothing
+06:29 
+
+06:29 but our new process
+06:30 
+
+06:30 so our temp contains LSUS L only so if
+06:33 
+
+06:33 you see here enter key so we have 16
+06:37 
+
+06:37 files 16 files so all are displayed so
+06:40 
+
+06:40 this is about ex ecv command it replaces
+06:44 
+
+06:44 the current process with new process so
+06:47 
+
+06:47 the statement won't execute if ex ecv
+06:50 
+
+06:50 command successfully executes now let us
+06:53 
+
+06:53 see
+06:54 
+
+06:54 the second version of the ex EC command
+06:58 
+
+06:58 that is ex e e LP system call EXC LP
+07:03 
+
+07:03 system call is also available in un
+07:07 
+
+07:07 sd. it also replaces the current process
+07:11 
+
+07:11 with new process so the functionality is
+07:13 
+
+07:13 same only but the syntax is different ex
+07:17 
+
+07:17 e LP of the first argument
+07:20 
+
+07:20 is b/ LS this is nothing but our current
+07:25 
+
+07:25 process whereas what is the second
+07:27 
+
+07:27 argument second argument is LS so that
+07:30 
+
+07:30 LS is nothing but new process so here
+07:33 
+
+07:33 the first argument is current process
+07:35 
+
+07:35 second argument is new process but here
+07:38 
+
+07:38 we must Supply third argument as the
+07:41 
+
+07:41 null whereas in ex EC V system call
+07:46 
+
+07:46 there is no need of the third argument
+07:49 
+
+07:49 only two arguments are enough but here
+07:51 
+
+07:51 we must pass third argument as null for
+07:54 
+
+07:54 null there is no need of any double
+07:56 
+
+07:56 quotations so whenever the system call
+07:59 
+
+07:59 is executed
+07:60 
+
+08:00 then the current process b/ LS will be
+08:03 
+
+08:03 replaced with new process that is LS so
+08:08 
+
+08:08 let us uh see the execution so Pico
+08:11 
+
+08:11 already that program was written EXC LP
+08:15 
+
+08:15 that is the name of the
+08:17 
+
+08:17 program yeah it's not
+08:20 
+
+08:20 GCC first let us open the program and
+08:23 
+
+08:23 after that do the compilation and
+08:25 
+
+08:25 execution yeah so this is our program so
+08:28 
+
+08:28 current process is been LS new process
+08:31 
+
+08:31 is LS it must contain
+08:33 
+
+08:33 none so if it is executed if EX eclp
+08:38 
+
+08:38 system call is successfully executed
+08:41 
+
+08:41 then this print of statement won't be
+08:43 
+
+08:43 executed okay suppose if the statement
+08:46 
+
+08:46 if the system call won't execute then
+08:48 
+
+08:48 this print up statement will execute so
+08:50 
+
+08:50 let us do the
+08:52 
+
+08:52 compilation so GCC ex eclp doc next
+08:58 
+
+08:58 execute the program do/ a.out so we will
+09:02 
+
+09:02 get output for LS we will get output for
+09:05 
+
+09:05 LS so if you see here if we execute LS
+09:09 
+
+09:09 then we will get output like this okay
+09:12 
+
+09:12 next for do SL a do out also we will get
+09:15 
+
+09:15 the same output same output why because
+09:19 
+
+09:19 our new process is LS so this is
+09:23 
+
+09:23 about ex EC system call

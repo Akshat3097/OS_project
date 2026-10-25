@@ -1,0 +1,29 @@
+{
+  "chat_examples": 1261,
+  "chat_train": 1158,
+  "chat_val": 103,
+  "by_kind": {
+    "check": 179,
+    "solve": 338,
+    "teachback": 52,
+    "quiz": 51,
+    "notes_student": 70,
+    "explain": 78,
+    "notes": 170,
+    "solve_student": 131,
+    "differently": 13,
+    "handwritten": 28,
+    "differently_student": 3,
+    "explain_student": 36,
+    "teachback_student": 21,
+    "check_student": 71,
+    "quiz_student": 20
+  },
+  "approx_tokens": {
+    "mean": 541,
+    "max": 1114,
+    "total": 683318
+  },
+  "combined_train": 1580,
+  "combined_val": 149
+}

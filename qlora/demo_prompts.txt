@@ -1,0 +1,7 @@
+# Prompts for the terminal demo (python -m qlora.compare). One per line; lines starting with # are skipped.
+Explain SRTF to me like I'm new to it
+In round robin, if a new process arrives at the same time the running process's quantum ends, who goes first?
+My SJF answer: P1 (AT 0, BT 6) CT 6, TAT 6, WT 6; P2 (AT 1, BT 2) CT 8, TAT 7, WT 7; P3 (AT 2, BT 4) CT 12, TAT 10, WT 10. Is it right?
+What is the difference between a binary semaphore and a counting semaphore?
+Is the system safe? Allocation P0 0 1 0, P1 2 0 0, P2 3 0 2, P3 2 1 1, P4 0 0 2. Max P0 7 5 3, P1 3 2 2, P2 9 0 2, P3 2 2 2, P4 4 3 3. Available 3 3 2.
+Quiz me on deadlocks

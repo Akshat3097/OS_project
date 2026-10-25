@@ -1,0 +1,547 @@
+00:00 now let's see about multi-level feedback
+00:03 
+
+00:03 you scheduling algorithm we have several
+00:06 
+
+00:06 scheduling algorithms like FCFS yes they
+00:09 
+
+00:09 have round-robin priority shuddering
+00:13 
+
+00:13 like this there are several scheduling
+00:15 
+
+00:15 algorithms ahead in every securing
+00:17 
+
+00:17 algorithm we uses only hundred EQ
+00:20 
+
+00:20 various a multi-level feedback queue
+00:24 
+
+00:24 scheduling algorithm partitions the
+00:27 
+
+00:27 Radek you into multiple data tools so
+00:30 
+
+00:30 that means here instead of single ridicu
+00:34 
+
+00:34 here we have multiple ready queue sorry
+00:36 
+
+00:36 available let's see this data here we
+00:40 
+
+00:40 have three ready to use so this is
+00:42 
+
+00:42 nothing but ridicu q naught and this
+00:44 
+
+00:44 cube is nothing but an acute cube and
+00:46 
+
+00:46 this cube is nothing but rather a cube
+00:48 
+
+00:48 cube IRA the processes in Q naught and Q
+00:53 
+
+00:53 1 are executed with the help of
+00:56 
+
+00:56 round-robin scheduling algorithm various
+00:59 
+
+00:59 the processes in cube or executed with
+01:03 
+
+01:03 the help of FCFS algorithm we know that
+01:06 
+
+01:06 we you just study q for storing the
+01:07 
+
+01:07 processes here why we uses round-robin
+01:11 
+
+01:11 algorithm for these 2 q is round robin
+01:14 
+
+01:14 algorithms produces the output in a
+01:16 
+
+01:16 faster manner it produces the response
+01:19 
+
+01:19 in a faster manner it will takes less
+01:21 
+
+01:21 time in order to produce the response
+01:23 
+
+01:23 various FCFS will takes more time in
+01:27 
+
+01:27 order to produce the response here the
+01:30 
+
+01:30 last study U is nothing but low priority
+01:32 
+
+01:32 process various the tout Q's are the
+01:35 
+
+01:35 thing but high priority processes so
+01:37 
+
+01:37 that's way for the high priority
+01:39 
+
+01:39 processes we use a sound robin
+01:41 
+
+01:41 shuddering algorithm very as for the low
+01:43 
+
+01:43 priority processes we uses FCFS
+01:46 
+
+01:46 scheduling algorithm next further
+01:49 
+
+01:49 already you do not processes a time
+01:52 
+
+01:52 quantum of milliseconds is allocated a
+01:55 
+
+01:55 various for Radek u1 processes a time
+01:59 
+
+01:59 quantum of 16 milliseconds is allocated
+02:02 
+
+02:02 now let's see the procedure here first
+02:05 
+
+02:05 the CPU executes all the processes in
+02:08 
+
+02:08 the cube you know
+02:10 
+
+02:10 first all the processes in punitive over
+02:13 
+
+02:13 then CPU starts executing the processes
+02:17 
+
+02:17 in ready qq1
+02:19 
+
+02:19 so we so CPU executes the processes in
+02:23 
+
+02:23 humor only when that unit relative is
+02:27 
+
+02:27 empty so once all the processes in human
+02:31 
+
+02:31 execution is homework then CPU starts
+02:33 
+
+02:33 executing the processes in you not you
+02:36 
+
+02:36 too ridiculous
+02:37 
+
+02:37 so CPU executes a process in YouTube
+02:41 
+
+02:41 only when Q not ready you as well as q1
+02:44 
+
+02:44 ridicuious empty whenever a process
+02:48 
+
+02:48 comes in then first that process will be
+02:51 
+
+02:51 placed in or nd give you not so for that
+02:54 
+
+02:54 purpose we are using this year whenever
+02:56 
+
+02:56 a new process comes in then the
+02:59 
+
+02:59 corresponding process is pasting ready
+03:02 
+
+03:02 you do not here we are using round-robin
+03:06 
+
+03:06 scheduling algorithm so CPU executes
+03:09 
+
+03:09 that process only for a particular time
+03:13 
+
+03:13 slice period of milliseconds suppose if
+03:17 
+
+03:17 that process x likes period is less than
+03:20 
+
+03:20 8 milliseconds then there is no problem
+03:23 
+
+03:23 that process execution may be woman so
+03:26 
+
+03:26 cpu produces the output ah assumes that
+03:30 
+
+03:30 that process is waiting for some Ryo
+03:32 
+
+03:32 operation after 8 milliseconds that time
+03:35 
+
+03:35 is over assumes that that process is
+03:37 
+
+03:37 waiting for some i/o operation so now
+03:40 
+
+03:40 that process will be moved to the some
+03:42 
+
+03:42 meaning you are some I work you very as
+03:46 
+
+03:46 if that process time period March to 10
+03:49 
+
+03:49 is greater than 8 milliseconds then that
+03:53 
+
+03:53 process will be moved to the ready
+03:55 
+
+03:55 you q1 so when that process will be
+03:58 
+
+03:58 moved to the ready queue cuber when that
+04:02 
+
+04:02 process burns to time is greater than 8
+04:04 
+
+04:04 milliseconds then that process will be
+04:07 
+
+04:07 moved to this and in UT 1 let us assume
+04:09 
+
+04:09 that here now in this handle you you not
+04:12 
+
+04:12 there are five processes are there where
+04:14 
+
+04:14 four processes burst atomies
+04:16 
+
+04:16 less than 8
+04:18 
+
+04:18 in seconds one process burns to 10 is
+04:20 
+
+04:20 greater than 8 milliseconds so now that
+04:23 
+
+04:23 one process who's worse to 10 is greater
+04:25 
+
+04:25 than 8 milliseconds that process should
+04:28 
+
+04:28 be moved to the ready queue queue 1 so
+04:31 
+
+04:31 this is the advantage of multi-level
+04:33 
+
+04:33 feedback you scheduling the processors
+04:35 
+
+04:35 can be moved between ready cues multiple
+04:38 
+
+04:38 queues here we are moving your process
+04:41 
+
+04:41 from and ad if you do not do the q1 so
+04:44 
+
+04:44 once all the processes in you not
+04:47 
+
+04:47 execution is over then CPUs towards
+04:50 
+
+04:50 executing the processes in q1 okay so
+04:54 
+
+04:54 here a time point above 16 milliseconds
+04:57 
+
+04:57 is given so CPU executes that process
+04:60 
+
+04:60 for 16 milliseconds if that particular
+05:03 
+
+05:03 process time slice period is less than
+05:06 
+
+05:06 16 milliseconds then there is no problem
+05:09 
+
+05:09 CPU produces the corresponding output or
+05:13 
+
+05:13 if the process is waiting for some aegyo
+05:15 
+
+05:15 operation then that process will be
+05:17 
+
+05:17 moved to the nerdy you I am sorry that
+05:19 
+
+05:19 process will be moved to the waiting you
+05:21 
+
+05:21 are some I work you various if that
+05:24 
+
+05:24 process period time slice period or
+05:27 
+
+05:27 punch to time is greater than 16
+05:29 
+
+05:29 milliseconds then that process will be
+05:32 
+
+05:32 moved from ready you you one do the
+05:34 
+
+05:34 relay you you do know the corresponding
+05:37 
+
+05:37 process will be executed in um CFS
+05:40 
+
+05:40 manner so here a high priority is given
+05:44 
+
+05:44 to the processes whose pass to 10 is
+05:47 
+
+05:47 less than 8 milliseconds why because if
+05:50 
+
+05:50 the process works to time is 5
+05:52 
+
+05:52 milliseconds then directly CPU produces
+05:54 
+
+05:54 the output there is no need to go to the
+05:57 
+
+05:57 remaining use the next level use ok very
+06:00 
+
+06:00 as if the process Baxter time is less
+06:02 
+
+06:02 than less than or equal to 16
+06:04 
+
+06:04 milliseconds then also there is no
+06:06 
+
+06:06 problem we will get the process output
+06:09 
+
+06:09 in a faster manner very as if that
+06:11 
+
+06:11 process burns to time is very very high
+06:13 
+
+06:13 then that process basket and is some 200
+06:16 
+
+06:16 milliseconds so that means in easy a CPU
+06:19 
+
+06:19 Bowl process CPU Bob Brown process means
+06:22 
+
+06:22 they pro this process
+06:23 
+
+06:23 using more CPU time so if the process is
+06:27 
+
+06:27 using more CPU time then the
+06:30 
+
+06:30 corresponding process will be moved to
+06:31 
+
+06:31 the low-end reality process various if
+06:35 
+
+06:35 the process is an aegyo board process
+06:37 
+
+06:37 Iowa Board process means CPU is less
+06:41 
+
+06:41 okay so then we will get the output in a
+06:44 
+
+06:44 faster manner so I go bound process
+06:47 
+
+06:47 means issues that then process marks to
+06:50 
+
+06:50 time is five year sentence
+06:51 
+
+06:51 it is the i/o board process whose CPU
+06:54 
+
+06:54 pass the time is five milliseconds so we
+06:56 
+
+06:56 can get the output in a faster manner
+06:58 
+
+06:58 so here the point is for CPU board
+07:01 
+
+07:01 process we need to have more amount of
+07:04 
+
+07:04 time in order to produce the output very
+07:07 
+
+07:07 as if it is a neighbor bond process then
+07:09 
+
+07:09 CPU produces the output in a faster
+07:12 
+
+07:12 manner okay and one more important point
+07:15 
+
+07:15 here is assumes that a set of processes
+07:18 
+
+07:18 are reading in a low priority queue for
+07:22 
+
+07:22 a long amount of time
+07:23 
+
+07:23 then the corresponding process will be
+07:26 
+
+07:26 moved from this low priority to you to
+07:29 
+
+07:29 higher priority queue also so in that
+07:32 
+
+07:32 way we can overcome the starvation
+07:34 
+
+07:34 problem we know what is starvation
+07:36 
+
+07:36 starvation means assumes that CPU is
+07:39 
+
+07:39 executing very high priority processes
+07:42 
+
+07:42 for a long amount of time so in that
+07:44 
+
+07:44 occasion low priority
+07:46 
+
+07:46 use low low priority queue processes
+07:48 
+
+07:48 needs to wait for a long amount of time
+07:50 
+
+07:50 instead of that what we can do if we a
+07:53 
+
+07:53 process is waiting in a low priority
+07:56 
+
+07:56 queue for a long amount of time then
+07:59 
+
+07:59 that process will be moved to its high
+08:01 
+
+08:01 priority queue so in that way we can
+08:03 
+
+08:03 avoid this tarnation also so this is
+08:06 
+
+08:06 about multi-level feedback you
+08:08 
+
+08:08 scheduling so why here we we use that
+08:12 
+
+08:12 feedback is why because here we can move
+08:15 
+
+08:15 the process from one view to the other
+08:18 
+
+08:18 and you we can move the process from 100
+08:20 
+
+08:20 you to the another ready queue so this
+08:22 
+
+08:22 is the advantage of multi-level feedback
+08:25 
+
+08:25 you schedule

@@ -1,0 +1,251 @@
+[
+  {
+    "id": "CAT1-2026B1-Q4-SRTF", "paper": "CAT-1, Fall 2026-27, slot B1", "question": "Q4 (part 1)", "marks": 5,
+    "kind": "advanced", "algorithm": "SRTF",
+    "text": "Each process has two CPU bursts separated by an I/O burst. Draw the Gantt chart for pre-emptive SJF and find CT, TAT, RT, WT, average WT and average TAT.",
+    "jobs": [
+      {"pid": "P1", "arrival": 0, "priority": 4, "bursts": [["CPU", 4], ["IO", 3], ["CPU", 3]]},
+      {"pid": "P2", "arrival": 1, "priority": 2, "bursts": [["CPU", 3], ["IO", 2], ["CPU", 2]]},
+      {"pid": "P3", "arrival": 2, "priority": 1, "bursts": [["CPU", 2], ["IO", 4], ["CPU", 2]]},
+      {"pid": "P4", "arrival": 4, "priority": 5, "bursts": [["CPU", 3], ["IO", 2], ["CPU", 1]]},
+      {"pid": "P5", "arrival": 5, "priority": 3, "bursts": [["CPU", 2], ["IO", 3], ["CPU", 4]]}
+    ],
+    "official": {"ct": {"P1": 21, "P2": 15, "P3": 13, "P4": 22, "P5": 26}, "avg_wt": 9, "avg_tat": 17, "avg_rt": 4.2,
+                 "wt_formula": "WT = TAT − CPU bursts − I/O burst",
+                 "gantt": "P1 0-4 | P3 4-6 | P5 6-8 | P2 8-11 | P3 11-13 | P2 13-15 | P4 15-18 | P1 18-21 | P4 21-22 | P5 22-26"}
+  },
+  {
+    "id": "CAT1-2026B1-Q4-PRIO", "paper": "CAT-1, Fall 2026-27, slot B1", "question": "Q4 (part 2)", "marks": 5,
+    "kind": "advanced", "algorithm": "PRIORITY_P", "lower_is_higher": true,
+    "text": "Same processes (two CPU bursts around an I/O burst). Pre-emptive priority scheduling, lower number = higher priority. Find CT, TAT, RT, WT and the averages.",
+    "jobs": [
+      {"pid": "P1", "arrival": 0, "priority": 4, "bursts": [["CPU", 4], ["IO", 3], ["CPU", 3]]},
+      {"pid": "P2", "arrival": 1, "priority": 2, "bursts": [["CPU", 3], ["IO", 2], ["CPU", 2]]},
+      {"pid": "P3", "arrival": 2, "priority": 1, "bursts": [["CPU", 2], ["IO", 4], ["CPU", 2]]},
+      {"pid": "P4", "arrival": 4, "priority": 5, "bursts": [["CPU", 3], ["IO", 2], ["CPU", 1]]},
+      {"pid": "P5", "arrival": 5, "priority": 3, "bursts": [["CPU", 2], ["IO", 3], ["CPU", 4]]}
+    ],
+    "official": {"ct": {"P1": 25, "P2": 12, "P3": 10, "P4": 26, "P5": 16}, "avg_wt": 7.4, "avg_tat": 15.4, "avg_rt": 3.2,
+                 "gantt": "P1 0-1 | P2 1-2 | P3 2-4 | P2 4-6 | P5 6-8 | P3 8-10 | P2 10-12 | P5 12-16 | P1 16-19 | P4 19-22 | P1 22-25 | P4 25-26"},
+    "notes": "The key also accepts the opposite convention (higher number = higher priority) if the student states it: avg WT 8.2, avg TAT 16.2."
+  },
+  {
+    "id": "CAT1-2026B1-Q4-PRIO-HIGH", "paper": "CAT-1, Fall 2026-27, slot B1", "question": "Q4 (part 2, alternative answer)", "marks": 5,
+    "kind": "advanced", "algorithm": "PRIORITY_P", "lower_is_higher": false,
+    "text": "Same question answered with the other convention the key accepts: higher number = higher priority.",
+    "jobs": [
+      {"pid": "P1", "arrival": 0, "priority": 4, "bursts": [["CPU", 4], ["IO", 3], ["CPU", 3]]},
+      {"pid": "P2", "arrival": 1, "priority": 2, "bursts": [["CPU", 3], ["IO", 2], ["CPU", 2]]},
+      {"pid": "P3", "arrival": 2, "priority": 1, "bursts": [["CPU", 2], ["IO", 4], ["CPU", 2]]},
+      {"pid": "P4", "arrival": 4, "priority": 5, "bursts": [["CPU", 3], ["IO", 2], ["CPU", 1]]},
+      {"pid": "P5", "arrival": 5, "priority": 3, "bursts": [["CPU", 2], ["IO", 3], ["CPU", 4]]}
+    ],
+    "official": {"ct": {"P1": 11, "P2": 22, "P3": 30, "P4": 10, "P5": 20}, "avg_wt": 8.2, "avg_tat": 16.2, "avg_rt": 7.6}
+  },
+  {
+    "id": "CAT1-2026B1-Q5-MLQ", "paper": "CAT-1, Fall 2026-27, slot B1", "question": "Q5", "marks": 10,
+    "kind": "advanced",
+    "text": "Three queues: Q1 Round Robin (q = 2 ms), Q2 Round Robin (q = 4 ms), Q3 FCFS; priority Q1 > Q2 > Q3. Draw the ready queues and the Gantt chart; find CT, TAT, WT and the averages.",
+    "queues": [{"qid": 1, "algorithm": "RR", "quantum": 2}, {"qid": 2, "algorithm": "RR", "quantum": 4}, {"qid": 3, "algorithm": "FCFS"}],
+    "jobs": [
+      {"pid": "P1", "arrival": 0, "queue": 1, "bursts": [["CPU", 5]]},
+      {"pid": "P2", "arrival": 1, "queue": 2, "bursts": [["CPU", 3]]},
+      {"pid": "P3", "arrival": 2, "queue": 3, "bursts": [["CPU", 8]]},
+      {"pid": "P4", "arrival": 3, "queue": 1, "bursts": [["CPU", 4]]},
+      {"pid": "P5", "arrival": 5, "queue": 2, "bursts": [["CPU", 6]]}
+    ],
+    "official": {"ct": {"P1": 7, "P2": 12, "P3": 26, "P4": 9, "P5": 18}, "avg_wt": 7, "avg_tat": 12.2,
+                 "gantt": "P1 0-4 | P4 4-6 | P1 6-7 | P4 7-9 | P2 9-12 | P5 12-18 | P3 18-26"}
+  },
+  {
+    "id": "CAT1-2024B2-Q4-SRTF", "paper": "CAT-1, Fall 2024-25, slot B2", "question": "Q4 (part 1)", "marks": 3,
+    "kind": "scheduling", "algorithm": "SRTF",
+    "text": "Draw the Gantt chart for pre-emptive SJF and find the average waiting and turnaround time.",
+    "processes": [
+      {"pid": "P1", "arrival": 0, "burst": 7, "priority": 5},
+      {"pid": "P2", "arrival": 6, "burst": 16, "priority": 2},
+      {"pid": "P3", "arrival": 2, "burst": 3, "priority": 0},
+      {"pid": "P4", "arrival": 12, "burst": 2, "priority": 6},
+      {"pid": "P5", "arrival": 8, "burst": 20, "priority": 5}
+    ],
+    "official": {"wt": {"P1": 3, "P2": 6, "P3": 0, "P4": 0, "P5": 20}, "avg_wt": 5.8, "avg_tat": 15.4}
+  },
+  {
+    "id": "CAT1-2024B2-Q4-PRIO", "paper": "CAT-1, Fall 2024-25, slot B2", "question": "Q4 (part 2)", "marks": 3,
+    "kind": "scheduling", "algorithm": "PRIORITY_P",
+    "text": "Same processes with pre-emptive priority scheduling (lower number = higher priority).",
+    "processes": [
+      {"pid": "P1", "arrival": 0, "burst": 7, "priority": 5},
+      {"pid": "P2", "arrival": 6, "burst": 16, "priority": 2},
+      {"pid": "P3", "arrival": 2, "burst": 3, "priority": 0},
+      {"pid": "P4", "arrival": 12, "burst": 2, "priority": 6},
+      {"pid": "P5", "arrival": 8, "burst": 20, "priority": 5}
+    ],
+    "official": {"wt": {"P1": 19, "P2": 0, "P3": 0, "P4": 34, "P5": 18}, "avg_wt": 14.2, "avg_tat": 23.8}
+  },
+  {
+    "id": "CAT1-2024B2-Q4-RR", "paper": "CAT-1, Fall 2024-25, slot B2", "question": "Q4 (part 3)", "marks": 4,
+    "kind": "scheduling", "algorithm": "RR", "quantum": 4,
+    "text": "Same processes with Round Robin, time quantum 4 ms.",
+    "processes": [
+      {"pid": "P1", "arrival": 0, "burst": 7, "priority": 5},
+      {"pid": "P2", "arrival": 6, "burst": 16, "priority": 2},
+      {"pid": "P3", "arrival": 2, "burst": 3, "priority": 0},
+      {"pid": "P4", "arrival": 12, "burst": 2, "priority": 6},
+      {"pid": "P5", "arrival": 8, "burst": 20, "priority": 5}
+    ],
+    "official": {"wt": {"P1": 3, "P2": 18, "P3": 2, "P4": 6, "P5": 20}, "avg_wt": 9.8, "avg_tat": 19.4}
+  },
+  {
+    "id": "CAT1-2024B2-Q5-FCFS", "paper": "CAT-1, Fall 2024-25, slot B2", "question": "Q5 (part 1)", "marks": 4,
+    "kind": "advanced", "algorithm": "FCFS",
+    "text": "Each process spends 40% of its total execution time on I/O and 60% on the CPU. Using only the CPU burst (60%), schedule with FCFS. Total times: P0 20, P1 10, P2 30, P3 8, P4 12, P5 40 ms.",
+    "jobs": [
+      {"pid": "P0", "arrival": 4, "bursts": [["CPU", 12]]}, {"pid": "P1", "arrival": 5, "bursts": [["CPU", 6]]},
+      {"pid": "P2", "arrival": 6, "bursts": [["CPU", 18]]}, {"pid": "P3", "arrival": 2, "bursts": [["CPU", 4.8]]},
+      {"pid": "P4", "arrival": 3, "bursts": [["CPU", 7.2]]}, {"pid": "P5", "arrival": 10, "bursts": [["CPU", 24]]}
+    ],
+    "official": {"avg_wt": 16.8, "avg_tat": 28.8, "gantt": "idle 0-2 | P3 2-6.8 | P4 6.8-14 | P0 14-26 | P1 26-32 | P2 32-50 | P5 50-74"}
+  },
+  {
+    "id": "CAT1-2024B2-Q5-SJF", "paper": "CAT-1, Fall 2024-25, slot B2", "question": "Q5 (part 2)", "marks": 4,
+    "kind": "advanced", "algorithm": "SJF",
+    "text": "Same processes (CPU burst = 60% of total time) with non-preemptive SJF.",
+    "jobs": [
+      {"pid": "P0", "arrival": 4, "bursts": [["CPU", 12]]}, {"pid": "P1", "arrival": 5, "bursts": [["CPU", 6]]},
+      {"pid": "P2", "arrival": 6, "bursts": [["CPU", 18]]}, {"pid": "P3", "arrival": 2, "bursts": [["CPU", 4.8]]},
+      {"pid": "P4", "arrival": 3, "bursts": [["CPU", 7.2]]}, {"pid": "P5", "arrival": 10, "bursts": [["CPU", 24]]}
+    ],
+    "official": {"avg_wt": 15.6, "avg_tat": 27.6, "gantt": "idle 0-2 | P3 2-6.8 | P1 6.8-12.8 | P4 12.8-20 | P0 20-32 | P2 32-50 | P5 50-74"}
+  },
+  {
+    "id": "CAT1-2025C1-Q4-RR", "paper": "CAT-1, Fall 2025-26, slot C1", "question": "Q4", "marks": 8,
+    "kind": "scheduling", "algorithm": "RR", "quantum": 2,
+    "text": "Round Robin with time quantum 2 ms. Draw the Gantt chart; find response time, completion time, average TAT and average WT.",
+    "processes": [
+      {"pid": "P1", "arrival": 0, "burst": 9}, {"pid": "P2", "arrival": 1, "burst": 5}, {"pid": "P3", "arrival": 2, "burst": 7},
+      {"pid": "P4", "arrival": 3, "burst": 4}, {"pid": "P5", "arrival": 4, "burst": 6}
+    ],
+    "official": {"ct": {"P1": 31, "P2": 23, "P3": 30, "P4": 20, "P5": 29}, "rt": {"P1": 0, "P2": 1, "P3": 2, "P4": 5, "P5": 6},
+                 "avg_wt": 18.4, "avg_tat": 24.6},
+    "notes": "This key confirms the Round Robin convention: a new arrival joins the queue before the preempted process (the other order gives different completion times)."
+  },
+  {
+    "id": "CAT1-2025C1-Q5-MLQ", "paper": "CAT-1, Fall 2025-26, slot C1", "question": "Q5", "marks": 10,
+    "kind": "advanced",
+    "text": "Multilevel queue with two queues: Queue 1 (high priority) uses pre-emptive SJF, Queue 2 (low priority) uses FCFS. Draw the Gantt chart and find average TAT and WT.",
+    "queues": [{"qid": 1, "algorithm": "SRTF"}, {"qid": 2, "algorithm": "FCFS"}],
+    "jobs": [
+      {"pid": "P1", "arrival": 0, "queue": 2, "bursts": [["CPU", 6]]}, {"pid": "P2", "arrival": 2, "queue": 1, "bursts": [["CPU", 2]]},
+      {"pid": "P3", "arrival": 5, "queue": 2, "bursts": [["CPU", 1]]}, {"pid": "P4", "arrival": 6, "queue": 2, "bursts": [["CPU", 5]]},
+      {"pid": "P5", "arrival": 7, "queue": 1, "bursts": [["CPU", 2]]}, {"pid": "P6", "arrival": 8, "queue": 2, "bursts": [["CPU", 4]]},
+      {"pid": "P7", "arrival": 9, "queue": 1, "bursts": [["CPU", 8]]}, {"pid": "P8", "arrival": 11, "queue": 2, "bursts": [["CPU", 3]]},
+      {"pid": "P9", "arrival": 14, "queue": 1, "bursts": [["CPU", 2]]}
+    ],
+    "official": {"ct": {"P1": 20, "P2": 4, "P3": 21, "P4": 26, "P5": 9, "P6": 30, "P7": 19, "P8": 33, "P9": 16},
+                 "avg_wt": 9.22, "avg_tat": 12.89},
+    "notes": "The key's TAT sum lists P9 as 29, a typo for 2; its total 116 / 9 = 12.89 is correct."
+  },
+  {
+    "id": "CAT1-2025C2-Q4-FCFS", "paper": "CAT-1, Fall 2025-26, slot C2", "question": "Q4 (i)", "marks": 3,
+    "kind": "advanced", "algorithm": "FCFS",
+    "text": "Each process spends 25% of its total time on I/O (done first) and the rest on the CPU. Total times: P1 4, P2 16, P3 20, P4 8, P5 24 ms. Schedule with FCFS; find average WT, average TAT and response times.",
+    "jobs": [
+      {"pid": "P1", "arrival": 0, "bursts": [["IO", 1], ["CPU", 3]]}, {"pid": "P2", "arrival": 1, "bursts": [["IO", 4], ["CPU", 12]]},
+      {"pid": "P3", "arrival": 10, "bursts": [["IO", 5], ["CPU", 15]]}, {"pid": "P4", "arrival": 5, "bursts": [["IO", 2], ["CPU", 6]]},
+      {"pid": "P5", "arrival": 4, "bursts": [["IO", 6], ["CPU", 18]]}
+    ],
+    "official": {"ct": {"P1": 4, "P2": 17, "P3": 56, "P4": 23, "P5": 41}, "avg_wt": 13.2, "avg_tat": 24.2,
+                 "wt_formula": "WT = start − arrival (I/O time counted as waiting)"},
+    "notes": "The key counts I/O as waiting (WT = TAT − CPU) but gives P1 a WT of 0 instead of 1, so its 13.2 should be 13.4. The Gantt chart and completion times match."
+  },
+  {
+    "id": "CAT1-2025C2-Q4-SJF", "paper": "CAT-1, Fall 2025-26, slot C2", "question": "Q4 (ii)", "marks": 3,
+    "kind": "advanced", "algorithm": "SJF",
+    "text": "Same processes (I/O first, then CPU) with non-preemptive SJF.",
+    "jobs": [
+      {"pid": "P1", "arrival": 0, "bursts": [["IO", 1], ["CPU", 3]]}, {"pid": "P2", "arrival": 1, "bursts": [["IO", 4], ["CPU", 12]]},
+      {"pid": "P3", "arrival": 10, "bursts": [["IO", 5], ["CPU", 15]]}, {"pid": "P4", "arrival": 5, "bursts": [["IO", 2], ["CPU", 6]]},
+      {"pid": "P5", "arrival": 4, "bursts": [["IO", 6], ["CPU", 18]]}
+    ],
+    "official": {"ct": {"P1": 4, "P2": 17, "P3": 38, "P4": 23, "P5": 56}, "avg_wt": 12.6, "avg_tat": 23.6},
+    "notes": "Same slip as part (i): P1's WT should be 1, giving 12.8. The Gantt chart and completion times match."
+  },
+  {
+    "id": "CAT1-2025C2-Q4-SRTF", "paper": "CAT-1, Fall 2025-26, slot C2", "question": "Q4 (iii)", "marks": 4,
+    "kind": "advanced", "algorithm": "SRTF",
+    "text": "Same processes (I/O first, then CPU) with pre-emptive SJF.",
+    "jobs": [
+      {"pid": "P1", "arrival": 0, "bursts": [["IO", 1], ["CPU", 3]]}, {"pid": "P2", "arrival": 1, "bursts": [["IO", 4], ["CPU", 12]]},
+      {"pid": "P3", "arrival": 10, "bursts": [["IO", 5], ["CPU", 15]]}, {"pid": "P4", "arrival": 5, "bursts": [["IO", 2], ["CPU", 6]]},
+      {"pid": "P5", "arrival": 4, "bursts": [["IO", 6], ["CPU", 18]]}
+    ],
+    "official": {"ct": {"P1": 4, "P2": 23, "P3": 38, "P4": 13, "P5": 56}, "avg_wt": 11.8, "avg_tat": 22.6},
+    "notes": "The key gives P1 a TAT of 3, but CT 4 − AT 0 = 4, so average TAT should be 22.8 (and average WT 12.0 with I/O counted as waiting). The Gantt chart matches."
+  },
+  {
+    "id": "CAT1-2025C2-Q5-MLQ", "paper": "CAT-1, Fall 2025-26, slot C2", "question": "Q5", "marks": 10,
+    "kind": "advanced",
+    "text": "Three queues (lower queue number = higher privilege): Q1 SJF, Q2 FCFS, Q3 Round Robin (time slice 2). Pre-emptive multilevel queue scheduling. Draw the Gantt chart; find average TAT and WT.",
+    "queues": [{"qid": 1, "algorithm": "SJF"}, {"qid": 2, "algorithm": "FCFS"}, {"qid": 3, "algorithm": "RR", "quantum": 2}],
+    "jobs": [
+      {"pid": "P1", "arrival": 0, "queue": 2, "bursts": [["CPU", 7]]}, {"pid": "P2", "arrival": 1, "queue": 1, "bursts": [["CPU", 6]]},
+      {"pid": "P3", "arrival": 2, "queue": 3, "bursts": [["CPU", 4]]}, {"pid": "P4", "arrival": 3, "queue": 2, "bursts": [["CPU", 3]]},
+      {"pid": "P5", "arrival": 3, "queue": 1, "bursts": [["CPU", 4]]}, {"pid": "P6", "arrival": 4, "queue": 2, "bursts": [["CPU", 2]]},
+      {"pid": "P7", "arrival": 4, "queue": 3, "bursts": [["CPU", 1]]}
+    ],
+    "official": {"ct": {"P1": 17, "P2": 7, "P3": 27, "P4": 20, "P5": 11, "P6": 22, "P7": 25}, "avg_wt": 12.14, "avg_tat": 16,
+                 "gantt": "P1 0-1 | P2 1-7 | P5 7-11 | P1 11-17 | P4 17-20 | P6 20-22 | P3 22-24 | P7 24-25 | P3 25-27"}
+  },
+  {
+    "id": "CAT2-2024B1-Q1-BANKERS", "paper": "CAT-2, Fall 2024-25, slot B1", "question": "Q1", "marks": 10,
+    "kind": "bankers", "resources": ["A", "B", "C", "D"],
+    "text": "Banker's algorithm: (1) is the system in a safe state? Show the sequence and Work vectors. (2) P1 requests (1, 1, 0, 0): can it be granted?",
+    "allocation": [[2, 0, 0, 1], [3, 1, 2, 1], [2, 1, 0, 3], [1, 3, 1, 2], [1, 4, 3, 2]],
+    "maximum": [[4, 2, 1, 2], [5, 2, 5, 2], [2, 3, 1, 6], [1, 4, 2, 4], [3, 6, 6, 5]],
+    "available": [3, 3, 2, 1],
+    "request": {"process": 1, "vector": [1, 1, 0, 0]},
+    "official": {"safe": true, "sequence": ["P0", "P3", "P4", "P1", "P2"], "request_granted": true}
+  },
+  {
+    "id": "CAT2-2025C1-Q1-BANKERS", "paper": "CAT-2, Fall 2025-26, slot C1", "question": "Q1 (b)", "marks": 7,
+    "kind": "bankers", "resources": ["A", "B", "C", "D"],
+    "text": "Using the Banker's algorithm, determine whether the system is in a safe state and give a safe sequence.",
+    "allocation": [[1, 1, 1, 2], [1, 0, 2, 0], [1, 3, 5, 4], [0, 6, 3, 2], [0, 3, 1, 4]],
+    "maximum": [[2, 2, 1, 2], [1, 7, 5, 0], [2, 3, 5, 6], [0, 6, 5, 2], [0, 6, 5, 6]],
+    "available": [1, 5, 2, 0],
+    "official": {"safe": true, "sequence": ["P0", "P2", "P3", "P4", "P1"], "also_accepted": [["P0", "P2", "P1", "P3", "P4"]]}
+  },
+  {
+    "id": "CAT2-2025C2-Q1-BANKERS", "paper": "CAT-2, Fall 2025-26, slot C2", "question": "Q1", "marks": 10,
+    "kind": "bankers", "resources": ["A", "B", "C", "D"],
+    "text": "Using the Banker's algorithm, is the system safe? Can a request for (0, 3, 0, 0) from P2 be granted immediately?",
+    "allocation": [[1, 1, 1, 2], [1, 0, 2, 0], [1, 3, 4, 4], [0, 5, 3, 2], [0, 3, 1, 4]],
+    "maximum": [[3, 2, 1, 2], [1, 6, 5, 0], [2, 3, 5, 6], [0, 5, 5, 2], [0, 6, 5, 6]],
+    "available": [0, 5, 2, 0],
+    "request": {"process": 2, "vector": [0, 3, 0, 0]},
+    "official": {"safe": true, "sequence": ["P3", "P4", "P1", "P2", "P0"], "request_granted": false,
+                 "reason": "The request exceeds P2's need (1, 0, 1, 2)."}
+  },
+  {
+    "id": "CAT2-2024B2-Q1-BANKERS", "paper": "CAT-2, Fall 2024-25, slot B2", "question": "Q1", "marks": 10,
+    "kind": "bankers", "resources": ["A", "B", "C", "D"],
+    "text": "Banker's algorithm: compute Need, check for a safe state, and decide whether P3's request (2, 1, 0, 0) can be granted. (The printed paper had Allocation larger than Max; the key solves it with the two tables swapped, as stored here.)",
+    "allocation": [[4, 0, 0, 1], [1, 1, 0, 0], [1, 2, 5, 4], [0, 6, 3, 3], [0, 2, 1, 2]],
+    "maximum": [[6, 0, 1, 2], [2, 7, 5, 0], [2, 3, 5, 6], [1, 6, 5, 3], [1, 6, 5, 6]],
+    "available": [3, 2, 1, 1],
+    "request": {"process": 3, "vector": [2, 1, 0, 0]},
+    "official": {"safe": true, "sequence": ["P0", "P2", "P3", "P4", "P1"], "request_granted": true},
+    "notes": "Possible error in the key: after swapping, P3's need is (1, 0, 2, 0), so a request for 2 instances of A exceeds its declared maximum and must be refused, not granted."
+  },
+  {
+    "id": "CAT2-2023B1-Q1-DETECTION", "paper": "CAT-2, Fall 2023-24, slots B1/B2", "question": "Q1", "marks": 10,
+    "kind": "bankers", "mode": "detection", "resources": ["P", "Q", "R"],
+    "text": "From the resource-allocation graph (5 processes, resources P, Q, R): is the current state safe? If not, how many more instances make it safe? (Processes P1..P5 in the paper are P0..P4 here; Need = the outstanding Request.)",
+    "allocation": [[2, 1, 0], [1, 2, 1], [0, 0, 3], [2, 2, 0], [0, 2, 3]],
+    "maximum": [[3, 2, 0], [1, 3, 1], [0, 0, 4], [3, 3, 0], [0, 3, 5]],
+    "available": [1, 0, 1],
+    "official": {"safe": false, "fix": "Add one instance of Q (Available = 1, 1, 1); then the order P1, P2, P3, P4, P5 completes.",
+                 "sequence_after_fix": ["P0", "P1", "P2", "P3", "P4"]}
+  }
+]

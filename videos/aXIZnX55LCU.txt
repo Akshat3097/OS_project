@@ -1,0 +1,1099 @@
+00:01 in this video we are going to discuss
+00:05 
+
+00:05 about fork and weight system calls first
+00:10 
+
+00:10 let us see about Fork system call it is
+00:13 
+
+00:13 mainly useful in order to create a child
+00:18 
+
+00:18 process here the child process is an
+00:22 
+
+00:22 exact
+00:23 
+
+00:23 replica or
+00:25 
+
+00:25 duplicate or copy of the parent process
+00:30 
+
+00:30 that means child process should contain
+00:35 
+
+00:35 same data of the parent
+00:37 
+
+00:37 process so child process and parent
+00:40 
+
+00:40 process both are same
+00:42 
+
+00:42 only here the process from which where
+00:46 
+
+00:46 we call the for system call is called as
+00:50 
+
+00:50 parent process whereas the new process
+00:55 
+
+00:55 that is the duplicate process is called
+00:58 
+
+00:58 as child process
+01:01 
+
+01:01 here the child process is exact similar
+01:06 
+
+01:06 to the parent process but they differ by
+01:10 
+
+01:10 process
+01:12 
+
+01:12 ID every process will have an
+01:16 
+
+01:16 identification number so a process is
+01:20 
+
+01:20 identified by P ID process ID here the
+01:25 
+
+01:25 parent process and child process both
+01:29 
+
+01:29 are same
+01:30 
+
+01:30 except process ID so P ID is different
+01:34 
+
+01:34 for parent as well as child process here
+01:39 
+
+01:39 what will happen is the parent process
+01:42 
+
+01:42 as well as child process will work will
+01:46 
+
+01:46 execute
+01:48 
+
+01:48 concurrently each has its own memory as
+01:52 
+
+01:52 well as its own
+01:54 
+
+01:54 resources for system call is available
+01:58 
+
+01:58 in a header file called uni SD header
+02:02 
+
+02:02 file and Fork system call mainly returns
+02:06 
+
+02:06 three
+02:07 
+
+02:07 values Fork system called returns minus
+02:11 
+
+02:11 one if there is an
+02:14 
+
+02:14 error while creating the child process
+02:18 
+
+02:18 so that means if no child process is
+02:21 
+
+02:21 created then Fork system called returns
+02:24 
+
+02:24 minus one whereas Fork system called
+02:29 
+
+02:29 returns zero
+02:31 
+
+02:31 for child
+02:32 
+
+02:32 process for the parent process four
+02:36 
+
+02:36 system called return returns a positive
+02:39 
+
+02:39 number that positive number is nothing
+02:42 
+
+02:42 but the process ID of the child process
+02:47 
+
+02:47 so Fork system call mainly returns three
+02:50 
+
+02:50 values zero for child
+02:54 
+
+02:54 process minus one or negative number a
+02:57 
+
+02:57 negative number where there is a fail
+03:01 
+
+03:01 while creating the child process and it
+03:03 
+
+03:03 returns a positive number for the parent
+03:06 
+
+03:06 process that positive number is nothing
+03:10 
+
+03:10 but the process idea of the child
+03:12 
+
+03:12 process now let us discuss about fourth
+03:15 
+
+03:15 system call with the help of some
+03:17 
+
+03:17 examples so let us see the first example
+03:21 
+
+03:21 so here we have stdio.h it is a c
+03:24 
+
+03:24 program but we are running in Unix
+03:27 
+
+03:27 environment I'm using wubu environment
+03:30 
+
+03:30 here we are using uni
+03:33 
+
+03:33 std. why because in this program we are
+03:36 
+
+03:36 using a function called get P ID
+03:38 
+
+03:38 function it will Returns the process ID
+03:41 
+
+03:41 of the process every process will have
+03:44 
+
+03:44 an unique process ID so here uh uh in
+03:49 
+
+03:49 main function what we are doing print of
+03:51 
+
+03:51 we are displaying some message process
+03:54 
+
+03:54 ID of the currently running process is
+03:56 
+
+03:56 it is displaying an integer for integer
+03:59 
+
+03:59 percentage is the format specifier get
+04:01 
+
+04:01 PID in this program we are not using any
+04:05 
+
+04:05 Fork system call so that means here we
+04:08 
+
+04:08 have only one process our main function
+04:11 
+
+04:11 is nothing but a process every program
+04:14 
+
+04:14 will have one process so our main
+04:17 
+
+04:17 function is nothing but process so here
+04:21 
+
+04:21 we have only one process so let us
+04:23 
+
+04:23 execute this program so here what is the
+04:26 
+
+04:26 name of the program ex1 is the name of
+04:29 
+
+04:29 the program
+04:30 
+
+04:30 so already the program is already
+04:33 
+
+04:33 written so VI ex1
+04:36 
+
+04:36 doc so already we have the program now
+04:39 
+
+04:39 let us do the
+04:41 
+
+04:41 compilation let us do the uh compilation
+04:49 
+
+04:49 now yeah uh instead of that uh uh colon
+04:53 
+
+04:53 PQ instead of va editor I'm going to use
+04:58 
+
+04:58 Pico editor so Pico x1. C so this is our
+05:02 
+
+05:02 program now let us do the uh compilation
+05:06 
+
+05:06 GCC space ex1 doc so compilation is over
+05:12 
+
+05:12 next for execution do/ a.out if you
+05:15 
+
+05:15 execute the program then the process ID
+05:18 
+
+05:18 will be displayed process ID of the
+05:20 
+
+05:20 currently learning process is 35 it may
+05:22 
+
+05:22 be any number some 40 or 500 any number
+05:25 
+
+05:25 will be displayed so this is our first
+05:28 
+
+05:28 program now let us see the second
+05:31 
+
+05:31 example so in this example we are using
+05:34 
+
+05:34 Fork system call as well as get P
+05:37 
+
+05:37 function both these functions Fork
+05:40 
+
+05:40 system call as well as get PID function
+05:44 
+
+05:44 these two are available in Ur sd. H here
+05:48 
+
+05:48 we are using Fork system call I already
+05:51 
+
+05:51 said that fork system call returns two
+05:55 
+
+05:55 values if it is successfully executed it
+05:59 
+
+05:59 will return zero for child process and a
+06:05 
+
+06:05 positive number for parent process a
+06:09 
+
+06:09 positive number for parent process so
+06:12 
+
+06:12 now here we have main function this main
+06:16 
+
+06:16 function is nothing but a parent process
+06:19 
+
+06:19 so for this parent process Fork system
+06:22 
+
+06:22 call Will creates the child process so
+06:25 
+
+06:25 for system call returns zero for the
+06:27 
+
+06:27 child process and a posi number for the
+06:30 
+
+06:30 parent process so how many times this
+06:34 
+
+06:34 printer function will gets
+06:36 
+
+06:36 executed this printer function will gets
+06:39 
+
+06:39 executed for two times one for parent
+06:43 
+
+06:43 process another one for child
+06:46 
+
+06:46 process now let us execute the program
+06:49 
+
+06:49 so already we have
+06:52 
+
+06:52 ex2 so this is our program now let us do
+06:56 
+
+06:56 the
+06:58 
+
+06:58 compilation compilation
+07:00 
+
+07:00 so GCC ex2 doc so there are no errors
+07:05 
+
+07:05 now let us do the
+07:07 
+
+07:07 execution so if You observe here the
+07:11 
+
+07:11 parent process process ID is
+07:13 
+
+07:13 42 next to process that that is sa
+07:16 
+
+07:16 process ID is 43 so this program got
+07:21 
+
+07:21 executed two times why because whenever
+07:24 
+
+07:24 for system call is executed then it will
+07:28 
+
+07:28 returns two values
+07:30 
+
+07:30 so one value that is zero for the child
+07:33 
+
+07:33 process yeah if you see here on success
+07:36 
+
+07:36 fourth system called returns twice so
+07:39 
+
+07:39 zero for child process and a positive
+07:42 
+
+07:42 number for the parent process now let us
+07:45 
+
+07:45 see the third
+07:48 
+
+07:48 example so in this example what we are
+07:51 
+
+07:51 doing is we are calling the fourth
+07:54 
+
+07:54 system called
+07:56 
+
+07:56 thce so print of so we are calling the
+08:00 
+
+08:00 fork system call three times so print of
+08:04 
+
+08:04 hollow by process ID is percentage D
+08:07 
+
+08:07 comma get
+08:08 
+
+08:08 P so how many times this message will
+08:12 
+
+08:12 gets printed if you use the fork System
+08:15 
+
+08:15 card then what will happen so let us
+08:18 
+
+08:18 assume that this main function process
+08:20 
+
+08:20 is
+08:22 
+
+08:22 P1 and we know that fork system call
+08:25 
+
+08:25 will create a child process for the
+08:28 
+
+08:28 parent process so let P2 is the child
+08:31 
+
+08:31 process for P1 process so after first
+08:36 
+
+08:36 for system called executed we will have
+08:39 
+
+08:39 these two processes next if second for
+08:43 
+
+08:43 system call is executed then what will
+08:45 
+
+08:45 happen is it will creates two more
+08:49 
+
+08:49 processes here we have two processes P1
+08:52 
+
+08:52 and P2 for P1 process a child process
+08:56 
+
+08:56 will be created Let It Be P3 for P2
+09:00 
+
+09:00 process also a child process will be
+09:03 
+
+09:03 created Let It Be P4 so we will have
+09:07 
+
+09:07 four processes after second Fork system
+09:10 
+
+09:10 call next if third Fork system call is
+09:14 
+
+09:14 executed then what will happen is here
+09:17 
+
+09:17 we have four processes so for each
+09:20 
+
+09:20 process one child will be created so for
+09:23 
+
+09:23 the first process fifth process will be
+09:26 
+
+09:26 created next for the second process
+09:29 
+
+09:29 sixth process will be created next for
+09:32 
+
+09:32 the third process seventh process will
+09:35 
+
+09:35 be created for the pro fourth process
+09:38 
+
+09:38 eth process will be created so here how
+09:40 
+
+09:40 many processes we have 1 2 3 4 5 6 7 8
+09:45 
+
+09:45 we have eight processes so our message
+09:49 
+
+09:49 will be displayed eight times why
+09:52 
+
+09:52 because in the previous program already
+09:54 
+
+09:54 we have seen one for system call
+09:57 
+
+09:57 invocation when 14 system call is
+09:60 
+
+09:60 invoked then what will happen two times
+10:03 
+
+10:03 the message will displayed one for child
+10:06 
+
+10:06 one for parent here we are calling for
+10:09 
+
+10:09 three times so how many times this
+10:11 
+
+10:11 message will get displayed eight times
+10:14 
+
+10:14 why because eight processes not created
+10:18 
+
+10:18 so PCO EX3
+10:20 
+
+10:20 doc yeah this is the program now let us
+10:23 
+
+10:23 do the uh
+10:26 
+
+10:26 compilation
+10:28 
+
+10:28 compilation so BCC EX3 doc now let us do
+10:33 
+
+10:33 the
+10:35 
+
+10:35 execution If You observe here eight
+10:38 
+
+10:38 processes are created one process ID is
+10:42 
+
+10:42 50 next process 54 this is the second
+10:46 
+
+10:46 process third process fourth
+10:49 
+
+10:49 process fifth process sixth process 7th
+10:54 
+
+10:54 process and eighth process here the
+10:58 
+
+10:58 process ID should be unique so each
+11:01 
+
+11:01 process has its own identification
+11:04 
+
+11:04 number now let us see the last example
+11:07 
+
+11:07 so this is very very important
+11:10 
+
+11:10 example so here what we are doing is
+11:13 
+
+11:13 instead of stdio UR sdd we are using c/
+11:19 
+
+11:19 types. H file why because here we are
+11:22 
+
+11:22 using p _ t it is p _ t stands for
+11:29 
+
+11:29 process ID data type it is a predefined
+11:33 
+
+11:33 data type which is available in c/ Taps
+11:38 
+
+11:38 types. H file it is just like integer so
+11:42 
+
+11:42 here Q is the variable name which is of
+11:45 
+
+11:45 type padore T next statement uh we are
+11:49 
+
+11:49 calling the four system call and Shoring
+11:51 
+
+11:51 the result in Q so now how many times
+11:55 
+
+11:55 this program will gets executed we know
+11:58 
+
+11:58 that every every for system call Will
+12:00 
+
+12:00 returns two values Z for a positive
+12:04 
+
+12:04 process I'm sorry 0o for child process
+12:08 
+
+12:08 and a positive number for parent process
+12:12 
+
+12:12 so let us assume that first it written a
+12:15 
+
+12:15 positive number so that means first
+12:18 
+
+12:18 parent process will gets executed so if
+12:20 
+
+12:20 You observe here if Q less than zero
+12:23 
+
+12:23 then print of error we have an error so
+12:26 
+
+12:26 that means a child process is not
+12:28 
+
+12:28 created success F LC if Q equal to Z so
+12:33 
+
+12:33 zero means it is a CH process so we are
+12:36 
+
+12:36 displaying that child process P ID here
+12:40 
+
+12:40 we are displaying child process P ID so
+12:43 
+
+12:43 get P ID function is enough next now let
+12:47 
+
+12:47 us display child process parent ID for
+12:51 
+
+12:51 that we have a library function called
+12:54 
+
+12:54 get PP ID get parent process
+12:58 
+
+12:58 identification number
+12:59 
+
+12:59 next LC if Q greater than Z greater than
+13:03 
+
+13:03 Z means it is a positive number it is a
+13:05 
+
+13:05 parent process so now what we are doing
+13:09 
+
+13:09 here we are displaying the parent
+13:11 
+
+13:11 process identification number so that
+13:14 
+
+13:14 means Q is greater than zero that means
+13:17 
+
+13:17 it is a parent process so just get P ID
+13:21 
+
+13:21 is enough why because now we are
+13:23 
+
+13:23 displaying that process identification
+13:26 
+
+13:26 number Q greater than Z means we are
+13:29 
+
+13:29 running the parent process next now we
+13:34 
+
+13:34 need to display child process ID also I
+13:38 
+
+13:38 already said that uh for system call
+13:42 
+
+13:42 returns a positive number for the parent
+13:45 
+
+13:45 process that positive number is nothing
+13:48 
+
+13:48 but process ID of the child process
+13:52 
+
+13:52 process ID of the child process so now
+13:55 
+
+13:55 we are uh yeah let us assume that now we
+13:59 
+
+13:59 are executing the parent process so
+14:01 
+
+14:01 parent process
+14:03 
+
+14:03 means parent process means now Fork
+14:06 
+
+14:06 system call is rning a
+14:08 
+
+14:08 value that Q contains that Q contains
+14:12 
+
+14:12 child process P ID
+14:15 
+
+14:15 number that Q contains child process P
+14:18 
+
+14:18 ID number so that's why here for
+14:21 
+
+14:21 displaying the Child ID that Q is enough
+14:25 
+
+14:25 why because parent process contains that
+14:27 
+
+14:27 whenever for system call is executed if
+14:30 
+
+14:30 it is a parent process then it will
+14:32 
+
+14:32 returns a positive number that positive
+14:35 
+
+14:35 number is nothing but child process
+14:39 
+
+14:39 process identification number now let's
+14:41 
+
+14:41 see the output here let us assume that
+14:44 
+
+14:44 initially it return a positive number so
+14:47 
+
+14:47 that means it is a parent process so
+14:50 
+
+14:50 first condition is false second
+14:52 
+
+14:52 condition is false third condition is
+14:54 
+
+14:54 true so what will happen now it's uh P
+14:57 
+
+14:57 ID will be displayed as as well as it
+14:60 
+
+14:60 children P ID will be displayed next one
+15:03 
+
+15:03 more time the program will gets executed
+15:05 
+
+15:05 that is for the child process for child
+15:07 
+
+15:07 process ID is zero so first condition is
+15:11 
+
+15:11 false second condition is true so the
+15:14 
+
+15:14 child process identification number will
+15:16 
+
+15:16 be printed as well as its parent process
+15:18 
+
+15:18 identification number will also gets
+15:21 
+
+15:21 displayed next here we have common
+15:23 
+
+15:23 section after the LC fladder we have
+15:26 
+
+15:26 common section section so this common
+15:28 
+
+15:28 section will be executed for both the
+15:31 
+
+15:31 parent process and child process if you
+15:33 
+
+15:33 see the execution so initially we got
+15:36 
+
+15:36 parent process output next to some
+15:39 
+
+15:39 common output next to child process
+15:42 
+
+15:42 output next to some common output so
+15:45 
+
+15:45 common output will get will always get
+15:47 
+
+15:47 displayed irrespective of it is a parent
+15:50 
+
+15:50 process or child process here we may get
+15:53 
+
+15:53 the output like this or we may get the
+15:56 
+
+15:56 output in zigzag manner so so that means
+15:59 
+
+15:59 first this statement may get displayed
+16:01 
+
+16:01 next to Second statement maybe this
+16:03 
+
+16:03 statement next to third statement maybe
+16:06 
+
+16:06 the statement we may get the output in
+16:08 
+
+16:08 any order now let us see the program
+16:11 
+
+16:11 Pico so example 4 doc so this is our
+16:17 
+
+16:17 program this is our program now let us
+16:20 
+
+16:20 uh uh compile the program
+16:23 
+
+16:23 GCC EX4 doc next let us run the program
+16:29 
+
+16:29 so here we got the output like this so
+16:31 
+
+16:31 first parent process information got
+16:33 
+
+16:33 displayed next children process
+16:36 
+
+16:36 information got displayed next that
+16:39 
+
+16:39 common output for the parent process as
+16:41 
+
+16:41 well as child process got
+16:43 
+
+16:43 displayed here the problem is we may get
+16:47 
+
+16:47 output in any order suppose if you want
+16:50 
+
+16:50 to execute child process first then we
+16:54 
+
+16:54 can use weight system call so let us see
+16:56 
+
+16:56 the next program that is weight system
+16:59 
+
+16:59 call V system call suspends the
+17:03 
+
+17:03 execution of the calling process that is
+17:06 
+
+17:06 parod process until one of its children
+17:09 
+
+17:09 completes its
+17:11 
+
+17:11 execution uh here we are using the W
+17:13 
+
+17:13 system call weight system call is
+17:16 
+
+17:16 available in a header file called c/ we.
+17:20 
+
+17:20 H we. same program just like the
+17:24 
+
+17:24 previous program only but in perod
+17:26 
+
+17:26 process we are using an additional
+17:29 
+
+17:29 statement called weight of none weight
+17:32 
+
+17:32 of none whenever weight system call used
+17:36 
+
+17:36 in a parent process then the parent
+17:40 
+
+17:40 process will wait until it children
+17:44 
+
+17:44 completes its execution so if we run
+17:47 
+
+17:47 this program then what will happen is
+17:50 
+
+17:50 first child process information will be
+17:52 
+
+17:52 displayed first child process will gets
+17:55 
+
+17:55 executed so these two lines will be
+17:57 
+
+17:57 printed next p process will be executed
+18:01 
+
+18:01 so that means these two lines will be
+18:02 
+
+18:02 displayed okay so so here we have common
+18:05 
+
+18:05 section so after the child Pro this
+18:07 
+
+18:07 common section will displayed after the
+18:09 
+
+18:09 parent process also this common section
+18:11 
+
+18:11 will displayed so this is the advantage
+18:14 
+
+18:14 so here the uh parent process is giving
+18:17 
+
+18:17 prority to the child process after child
+18:20 
+
+18:20 process execution only parent process
+18:23 
+
+18:23 will gets executed now let us see the uh
+18:26 
+
+18:26 weight
+18:27 
+
+18:27 program so P ex same program same
+18:32 
+
+18:32 program but we need to add two statement
+18:35 
+
+18:35 we need to include SL we. H as well as
+18:39 
+
+18:39 in the weight function we need to pass
+18:41 
+
+18:41 parameter also weight of done so we have
+18:43 
+
+18:43 to execute weight system called in
+18:45 
+
+18:45 parent process so now what will happen
+18:48 
+
+18:48 the children process will be executed
+18:51 
+
+18:51 first the parent process will wait until
+18:54 
+
+18:54 it children P process completes its
+18:57 
+
+18:57 execution now let us run the program
+18:60 
+
+18:60 yeah first if you see here first child
+19:03 
+
+19:03 process got displayed next this common
+19:05 
+
+19:05 section is for child process next parent
+19:08 
+
+19:08 process output this common section is
+19:10 
+
+19:10 for parent process common section yeah
+19:14 
+
+19:14 this is about fork and weight system CS
